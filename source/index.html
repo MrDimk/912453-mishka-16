@@ -19,7 +19,7 @@
         </div>
         <button class="burger-button--open">Меню</button>
         <ul class="main-menu">
-          <li class="main-menu__item"><a href="" class="main-menu__link">Каталог товаров</a></li>
+          <li class="main-menu__item"><a href="catalog.html" class="main-menu__link">Каталог товаров</a></li>
           <li class="main-menu__item"><a href="" class="main-menu__link">Вязание на заказ</a></li>
           <li class="main-menu__item">
             <form action="https://echo.htmlacademy.ru" method="GET" class="search__form">
@@ -155,6 +155,29 @@
       <p class="feedback">
         <button class="feedback__btn button">Напишите нам</button>
       </p>
+      <section class="purchase-popup modal">
+          <h2 class="purchase-popup__title">Добавить в корзину</h2>
+          <form action="https://echo.htmlacademy.ru" method="POST" class="purchase-popup__form">
+            <p class="purchase-popup__size-text">
+              Выберите размер:
+            </p>
+            <ul class="purchase-popup__size-list">
+              <li class="purchase-popup__size-item">
+                  <input type="radio" name="size" id="size-s" class="purchase-popup__size-input" value="S" checked>
+                  <label for="size-s">S</label>
+                </li>
+              <li class="purchase-popup__size-item">
+                  <input type="radio" name="size" id="size-m" class="purchase-popup__size-input" value="M">
+                  <label for="size-m">M</label>
+                </li>
+              <li class="purchase-popup__size-item">
+                  <input type="radio" name="size" id="size-l" class="purchase-popup__size-input" value="L">
+                  <label for="size-l">L</label>
+                </li>
+            </ul>
+            <button class="purchase-popup__submit-btn button--blue" type="submit">Добавить</button>
+          </form>
+        </section>
     </main>
     <footer class="site-footer">
       <ul class="social">
