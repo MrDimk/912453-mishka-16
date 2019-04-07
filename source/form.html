@@ -6,21 +6,25 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="header-logo">
-          <a href="index.html" class="header-logo__link">
+    <header class="site-header">
+      <nav class="site-header__navigation navigation">
+        <div class="navigation__logo">
+          <a href="index.html" class="navigation__logo-link">
             <img
               src="https://via.placeholder.com/86x35"
               alt="Мишка - магазин товаров ручной работы"
-              class="header-logo__img"
+              class="navigation__logo-img"
             />
           </a>
         </div>
-        <button class="burger-button--open">Меню</button>
-        <ul class="main-menu">
-          <li class="main-menu__item"><a href="" class="main-menu__link">Каталог товаров</a></li>
-          <li class="main-menu__item"><a href="" class="main-menu__link">Вязание на заказ</a></li>
+        <button class="navigation__burger-button navigation-burger-button--open">Меню</button>
+        <ul class="navigation__main-menu main-menu">
+          <li class="main-menu__item">
+            <a href="catalog.html" class="main-menu__link">Каталог товаров</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="form.html" class="main-menu__link">Вязание на заказ</a>
+          </li>
           <li class="main-menu__item">
             <form action="https://echo.htmlacademy.ru" method="GET" class="search__form">
               <input type="text" class="search__input" />
@@ -36,11 +40,11 @@
         </ul>
       </nav>
     </header>
-    <main class="knitting">
-      <h1 class="knitting__title">
+    <main class="site-page">
+      <h1 class="site-page__title page-title">
         Вязание на заказ
       </h1>
-      <section class="knit-order">
+      <section class="site-page__knit-order knit-order">
         <h2 class="knit-order__title visually-hidden">Форма заказа</h2>
         <p class="knit-order__text">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
@@ -227,15 +231,15 @@
       </section>
     </main>
     <footer class="site-footer">
-      <ul class="social">
-        <li class="social__instagram">
-          <a href="#" class="social-button instagram" aria-label="Instagram"></a>
+      <ul class="site-footer__social social">
+        <li class="social__item">
+          <a href="#" class="social__link social__link--instagram" aria-label="Instagram"></a>
         </li>
-        <li class="social__facebook">
-          <a href="#" class="social-button fb" aria-label="Facebook"></a>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--fb" aria-label="Facebook"></a>
         </li>
-        <li class="social__twitter">
-          <a href="#" class="social-button twitter" aria-label="Twitter"></a>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--twitter" aria-label="Twitter"></a>
         </li>
       </ul>
       <p class="site-footer__copyright">

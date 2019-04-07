@@ -6,21 +6,25 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="header-logo">
-          <a href="index.html" class="header-logo__link">
+    <header class="site-header">
+      <nav class="site-header__navigation navigation">
+        <div class="navigation__logo">
+          <a href="index.html" class="navigation__logo-link">
             <img
               src="https://via.placeholder.com/86x35"
               alt="Мишка - магазин товаров ручной работы"
-              class="header-logo__img"
+              class="navigation__logo-img"
             />
           </a>
         </div>
-        <button class="burger-button--open">Меню</button>
-        <ul class="main-menu">
-          <li class="main-menu__item"><a href="catalog.html" class="main-menu__link">Каталог товаров</a></li>
-          <li class="main-menu__item"><a href="form.html" class="main-menu__link">Вязание на заказ</a></li>
+        <button class="navigation__burger-button navigation-burger-button--open">Меню</button>
+        <ul class="navigation__main-menu main-menu">
+          <li class="main-menu__item">
+            <a href="catalog.html" class="main-menu__link">Каталог товаров</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="form.html" class="main-menu__link">Вязание на заказ</a>
+          </li>
           <li class="main-menu__item">
             <form action="https://echo.htmlacademy.ru" method="GET" class="search__form">
               <input type="text" class="search__input" />
@@ -37,18 +41,16 @@
       </nav>
     </header>
     <main class="main-page">
-      <div class="main-baner">
-        <div class="main-baner__bg-image">
-          <h1 class="main-baner__title">
-            Милые штуки ручной работы для дома
-          </h1>
-        </div>
+      <div class="main-page__baner main-baner">
+        <h1 class="main-baner__title">
+          Милые штуки ручной работы для дома
+        </h1>
       </div>
-      <div class="catalog">
-        <button class="catalog-button--interior">Предметы интерьера</button>
-        <button class="catalog-button--toys">Детские игрушки</button>
+      <div class="main-page__catalog catalog">
+        <a href="catalog.html" class="catalog-link catalog-link--interior">Предметы интерьера</a>
+        <a href="catalog.html" class="catalog-link catalog-link--toys">Детские игрушки</a>
       </div>
-      <section class="top-product">
+      <section class="main-page__top-product top-product">
         <h2 class="top-product__title">Вязаные корзинки</h2>
         <span class="top-product__mark">Товар недели</span>
         <p class="top-product__description">
@@ -77,36 +79,36 @@
         <p class="top-product__price">Цена: 990 руб.</p>
         <button class="top-product__purchase-button button">Заказать</button>
       </section>
-      <section class="about">
+      <section class="main-page__about about">
         <h2 class="about__title">Коротко о нас:</h2>
         <ul class="about__items">
           <li class="about__item">
-            <span class="about__item-icon--flower"></span>
+            <span class="about__item-icon about__item-icon--flower"></span>
             <p class="about__item-text">Экологически чистые материалы</p>
           </li>
           <li class="about__item">
-            <span class="about__item-icon--money"></span>
+            <span class="about__item-icon about__item-icon--money"></span>
             <p class="about__item-text">Скандинавский стиль по российской цене</p>
           </li>
           <li class="about__item">
-            <span class="about__item-icon--heart"></span>
+            <span class="about__item-icon about__item-icon--heart"></span>
             <p class="about__item-text">Увеличивает лайки на фотографиях</p>
           </li>
           <li class="about__item">
-            <span class="about__item-icon--yarn"></span>
+            <span class="about__item-icon about__item-icon--yarn"></span>
             <p class="about__item-text">Связано вручную с любовью и умилением</p>
           </li>
           <li class="about__item">
-            <span class="about__item-icon--rocket"></span>
+            <span class="about__item-icon about__item-icon--rocket"></span>
             <p class="about__item-text">Поддержка отечественного производителя</p>
           </li>
           <li class="about__item">
-            <span class="about__item-icon--gift"></span>
+            <span class="about__item-icon about__item-icon--gift"></span>
             <p class="about__item-text">Поставляется в подарочной упаковке</p>
           </li>
         </ul>
       </section>
-      <section class="reviews">
+      <section class="main-page__reviews reviews">
         <h2 class="reviews__title">Отзывы</h2>
         <ul class="reviews__list">
           <li class="reviews__item">
@@ -123,25 +125,25 @@
         </ul>
         <div class="reviews__controls">
           <button class="reviews__prev-btn">Назад</button>
-          <button class="next-btn">Вперед</button>
+          <button class="reviews__next-btn">Вперед</button>
         </div>
-        <button class="reviews__white-btn button">Написать</button>
+        <button class="reviews__write-btn button">Написать</button>
       </section>
-      <section class="contacts">
+      <section class="main-page__contacts contacts">
         <h3 class="contacts__title">Контакты</h3>
         <p class="contacts__email">
           <span class="contacts__email-title">e-mail:</span>
           <span class="contacts__email-value">info@mimimishkashop.ru</span>
         </p>
         <p class="contacts__address">
-            <span class="contacts__address-title">адрес:</span>
-            <span class="contacts__address-value">
-              г. Санкт-Петербург,<br>
-              ул. Большая Конюшенная,<br>
-              д. 19/8, офис 101
-            </span>
+          <span class="contacts__address-title">адрес:</span>
+          <span class="contacts__address-value">
+            г. Санкт-Петербург,<br />
+            ул. Большая Конюшенная,<br />
+            д. 19/8, офис 101
+          </span>
         </p>
-        <div class="map">
+        <div class="contacts__map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253322!2d30.32085871603101!3d59.938716481876234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1554557760929!5m2!1sru!2sru"
             width="320"
@@ -151,44 +153,63 @@
           >
           </iframe>
         </div>
+        <p class="contacts__feedback">
+          <button class="contacts__feedback-btn button">Напишите нам</button>
+        </p>
       </section>
-      <p class="feedback">
-        <button class="feedback__btn button">Напишите нам</button>
-      </p>
-      <section class="purchase-popup modal">
-          <h2 class="purchase-popup__title">Добавить в корзину</h2>
-          <form action="https://echo.htmlacademy.ru" method="POST" class="purchase-popup__form">
-            <p class="purchase-popup__size-text">
-              Выберите размер:
-            </p>
-            <ul class="purchase-popup__size-list">
-              <li class="purchase-popup__size-item">
-                  <input type="radio" name="size" id="size-s" class="purchase-popup__size-input" value="S" checked>
-                  <label for="size-s">S</label>
-                </li>
-              <li class="purchase-popup__size-item">
-                  <input type="radio" name="size" id="size-m" class="purchase-popup__size-input" value="M">
-                  <label for="size-m">M</label>
-                </li>
-              <li class="purchase-popup__size-item">
-                  <input type="radio" name="size" id="size-l" class="purchase-popup__size-input" value="L">
-                  <label for="size-l">L</label>
-                </li>
-            </ul>
-            <button class="purchase-popup__submit-btn button--blue" type="submit">Добавить</button>
-          </form>
-        </section>
+      <section class="main-page__purchase-popup purchase-popup modal">
+        <h2 class="purchase-popup__title">Добавить в корзину</h2>
+        <form action="https://echo.htmlacademy.ru" method="POST" class="purchase-popup__form">
+          <p class="purchase-popup__size-text">
+            Выберите размер:
+          </p>
+          <ul class="purchase-popup__size-list">
+            <li class="purchase-popup__size-item">
+              <input
+                type="radio"
+                name="size"
+                id="size-s"
+                class="purchase-popup__size-input"
+                value="S"
+                checked
+              />
+              <label for="size-s">S</label>
+            </li>
+            <li class="purchase-popup__size-item">
+              <input
+                type="radio"
+                name="size"
+                id="size-m"
+                class="purchase-popup__size-input"
+                value="M"
+              />
+              <label for="size-m">M</label>
+            </li>
+            <li class="purchase-popup__size-item">
+              <input
+                type="radio"
+                name="size"
+                id="size-l"
+                class="purchase-popup__size-input"
+                value="L"
+              />
+              <label for="size-l">L</label>
+            </li>
+          </ul>
+          <button class="purchase-popup__submit-btn button" type="submit">Добавить</button>
+        </form>
+      </section>
     </main>
     <footer class="site-footer">
-      <ul class="social">
-        <li class="social__instagram">
-          <a href="#" class="social-button instagram" aria-label="Instagram"></a>
+      <ul class="site-footer__social social">
+        <li class="social__item">
+          <a href="#" class="social__link social__link--instagram" aria-label="Instagram"></a>
         </li>
-        <li class="social__facebook">
-          <a href="#" class="social-button fb" aria-label="Facebook"></a>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--fb" aria-label="Facebook"></a>
         </li>
-        <li class="social__twitter">
-          <a href="#" class="social-button twitter" aria-label="Twitter"></a>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--twitter" aria-label="Twitter"></a>
         </li>
       </ul>
       <p class="site-footer__copyright">
