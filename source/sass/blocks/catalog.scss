@@ -1,0 +1,53 @@
+$bg: #57c3b3;
+$bg-ligter: #64d1bc;
+
+$font-color: #ffffff;
+
+$icon-interior: '../../img/icon-interior.svg';
+$icon-toys: '../../img/icon-toy.svg';
+
+.catalog {
+  margin: 0;
+  padding: 0;
+  font-family: $bold;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+.catalog__link {
+  display: block;
+  width: 100%;
+  min-height: 103px;
+  text-decoration: none;
+  color: $font-color;
+}
+
+.catalog__link::after {
+  content: '';
+  display: block;
+  padding: 20px 25px;
+  opacity: 0.5;
+  background-repeat: no-repeat;
+}
+
+.catalog__link--interior {
+  background-color: $bg-ligter;
+}
+
+.catalog__link--toys {
+  background-color: $bg;
+}
+
+.catalog__link--interior::after {
+  background-image: url($icon-interior);
+  width: 40px;
+  height: 62px;
+}
+
+.catalog__link--toys::after {
+  background-image: url($icon-toys);
+  width: 60px;
+  height: 60px;
+}
+
+//End

@@ -1,0 +1,57 @@
+.contacts {
+
+}
+
+.contacts__title {
+  font-family: $bold;
+  font-size: 18px;
+  line-height: 30px;
+
+  padding: 0 30px;
+}
+
+.contacts__email,
+.contacts__address {
+  font-family: $regular;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+
+  margin: 0;
+
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contacts__email-title,
+.contacts__address-title {
+  width: 80px;
+  padding-left: 30px;
+}
+
+.contacts__map {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  width: 100%;
+  min-height: 450px;
+}
+
+.contacts__map iframe {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.contacts__feedback {
+  margin: 0;
+  padding: 0 30px;
+
+}
+
+.contacts__feedback-btn {
+  width: 100%;
+  margin-bottom: 40px;
+}
+//End

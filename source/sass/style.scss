@@ -1,0 +1,59 @@
+@charset 'utf-8';
+
+////////////////////FONTS//////////////////
+@font-face {
+  font-family: "Open-Sans";
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open-Sans-Bold";
+  src: url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+////////////////////VARIABLES////////////////
+$bold: 'Open-Sans-Bold';
+$regular: 'Open-Sans';
+
+
+////////////////////IMPORTS//////////////////
+@import "blocks/visually-hidden.scss";
+@import "blocks/site-header.scss";
+@import "blocks/navigation.scss";
+@import "blocks/main-menu.scss";
+@import "blocks/search.scss";
+@import "blocks/cart.scss";
+@import "blocks/main-baner.scss";
+@import "blocks/main-page.scss";
+@import "blocks/catalog.scss";
+@import "blocks/top-product.scss";
+@import "blocks/button.scss";
+@import "blocks/about.scss";
+@import "blocks/reviews.scss";
+@import "blocks/contacts.scss";
+@import "blocks/modal.scss";
+@import "blocks/purchase-popup.scss";
+
+
+/////////////////////////////////////////////
+// * {
+//   outline: dotted 1px;
+//   outline-color: rgba(255, 0, 0, 0.2);
+//   background-color: rgba(255, 200, 0, 0.1);
+// }
+
+// *:hover {
+//   background-color: rgba(255, 200, 0, 0.3);
+// }
+/////////////////////////////////////////////
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
