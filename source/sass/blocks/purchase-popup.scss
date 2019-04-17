@@ -1,6 +1,4 @@
-
 .purchase-popup {
-  // display: none;
   padding: 30px;
 }
 
@@ -11,7 +9,48 @@
   line-height: 30px;
   text-transform: uppercase;
   text-align: center;
+}
 
+.purchase-popup__size-text {
+  font-family: $regular;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+  text-align: center;
+}
+
+.purchase-popup__size-list {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.purchase-popup__size-input + label {
+  display: block;
+  box-sizing: border-box;
+  width: 82px;
+  height: 52px;
+
+  color: #444444;
+  font-family: $bold;
+  font-size: 17px;
+  line-height: 16px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.purchase-popup__size-input:checked + label {
+  border: 2px solid #64d1bc;
+}
+
+.purchase-popup__submit-btn {
+  width: 100%;
+  background-color: #64d1bc;
+  border-color: #64d1bc;
 }
 
 //End

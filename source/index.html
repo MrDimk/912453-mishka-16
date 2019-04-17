@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
@@ -46,12 +46,19 @@
     <main class="main-page">
       <div class="main-page__baner main-baner">
         <h1 class="main-baner__title">
-          Милые штуки ручной<br> работы для дома
+          Милые штуки ручной<br />
+          работы для дома
         </h1>
       </div>
       <div class="main-page__catalog catalog">
-        <a href="catalog.html" class="catalog__link catalog__link--interior">Предметы интерьера</a>
-        <a href="catalog.html" class="catalog__link catalog__link--toys">Детские игрушки</a>
+        <a href="catalog.html" class="catalog__link catalog__link--interior">
+          Предметы интерьера
+          <span class="catalog__icon catalog__icon--interior"></span>
+        </a>
+        <a href="catalog.html" class="catalog__link catalog__link--toys">
+          Детские игрушки
+          <span class="catalog__icon catalog__icon--toys"></span>
+        </a>
       </div>
       <section class="main-page__top-product top-product">
         <h2 class="top-product__title">Вязаные корзинки</h2>
@@ -162,8 +169,11 @@
           <button class="contacts__feedback-btn button">Напишите нам</button>
         </p>
       </section>
-      <section class="main-page__purchase-popup purchase-popup modal">
-        <h2 class="purchase-popup__title">Добавить в корзину</h2>
+      <section class="main-page__purchase-popup purchase-popup modal modal--closed">
+        <h2 class="purchase-popup__title">
+          Добавить <br />
+          в корзину
+        </h2>
         <form action="https://echo.htmlacademy.ru" method="POST" class="purchase-popup__form">
           <p class="purchase-popup__size-text">
             Выберите размер:
@@ -174,7 +184,7 @@
                 type="radio"
                 name="size"
                 id="size-s"
-                class="purchase-popup__size-input"
+                class="purchase-popup__size-input visually-hidden"
                 value="S"
                 checked
               />
@@ -185,7 +195,7 @@
                 type="radio"
                 name="size"
                 id="size-m"
-                class="purchase-popup__size-input"
+                class="purchase-popup__size-input visually-hidden"
                 value="M"
               />
               <label for="size-m">M</label>
@@ -195,7 +205,7 @@
                 type="radio"
                 name="size"
                 id="size-l"
-                class="purchase-popup__size-input"
+                class="purchase-popup__size-input visually-hidden"
                 value="L"
               />
               <label for="size-l">L</label>
@@ -217,16 +227,20 @@
           <a href="#" class="social__link social__link--twitter" aria-label="Twitter"></a>
         </li>
       </ul>
-      <p class="site-footer__copyright">
-        Разработано
-      </p>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="site-footer__copyright-link">
-        <img
-          class="site-footer__copyright-logo"
-          src="https://via.placeholder.com/27x34"
-          alt="HTML Academy - HTML и CSS, уровень 2"
-        />
-      </a>
+      <div class="site-footer__bottom">
+        <p class="site-footer__copyright">
+          Разработано
+        </p>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="site-footer__copyright-link">
+          <img
+            class="site-footer__copyright-logo"
+            width="27"
+            height="34"
+            src="img/htmlacademy.svg"
+            alt="HTML Academy - HTML и CSS, уровень 2"
+          />
+        </a>
+      </div>
     </footer>
   </body>
 </html>

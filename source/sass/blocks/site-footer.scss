@@ -1,0 +1,34 @@
+.site-footer {
+  margin: 0;
+  padding: 25px 30px;
+  background-color: #f1f1f1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-footer__social {
+  width: 140px;
+}
+
+.site-footer__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-footer__copyright {
+  font-family: $bold;
+  font-size: 19px;
+  line-height: 18px;
+  color: #000000;
+
+  margin-right: 30px;
+}
+
+.site-footer__copyright-logo {
+  color: #64d1ba;
+}
+
+//End

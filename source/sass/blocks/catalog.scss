@@ -15,16 +15,18 @@ $icon-toys: '../../img/icon-toy.svg';
 }
 
 .catalog__link {
-  display: block;
+  // padding: 0 30px;
   width: 100%;
   min-height: 103px;
   text-decoration: none;
   color: $font-color;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.catalog__link::after {
-  content: '';
-  display: block;
+.catalog__icon {
   padding: 20px 25px;
   opacity: 0.5;
   background-repeat: no-repeat;
@@ -38,13 +40,13 @@ $icon-toys: '../../img/icon-toy.svg';
   background-color: $bg;
 }
 
-.catalog__link--interior::after {
+.catalog__icon--interior {
   background-image: url($icon-interior);
   width: 40px;
   height: 62px;
 }
 
-.catalog__link--toys::after {
+.catalog__icon--toys {
   background-image: url($icon-toys);
   width: 60px;
   height: 60px;
