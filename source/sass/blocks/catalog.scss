@@ -15,8 +15,9 @@ $icon-toys: '../../img/icon-toy.svg';
 }
 
 .catalog__link {
-  // padding: 0 30px;
+  box-sizing: border-box;
   width: 100%;
+  padding: 0 30px;
   min-height: 103px;
   text-decoration: none;
   color: $font-color;
@@ -27,11 +28,13 @@ $icon-toys: '../../img/icon-toy.svg';
 }
 
 .catalog__icon {
-  padding: 20px 25px;
+  padding-left: 30px;
   opacity: 0.5;
   background-repeat: no-repeat;
+  background-position: center;
+  width: 60px;
+  height: 60px;
 }
-
 .catalog__link--interior {
   background-color: $bg-ligter;
 }
@@ -42,14 +45,10 @@ $icon-toys: '../../img/icon-toy.svg';
 
 .catalog__icon--interior {
   background-image: url($icon-interior);
-  width: 40px;
-  height: 62px;
 }
 
 .catalog__icon--toys {
   background-image: url($icon-toys);
-  width: 60px;
-  height: 60px;
 }
 
 //End
