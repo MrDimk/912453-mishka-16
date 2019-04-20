@@ -1,14 +1,9 @@
-
-
 .reviews {
-
+  //
 }
 
 .reviews__title {
-  font-family: $bold;
-  font-size: 25px;
-  line-height: 30px;
-  color: #000000;
+  @include font($bold, 25px, 30px, $black);
 }
 
 .reviews__list {
@@ -23,27 +18,18 @@
 }
 
 .reviews__item-text {
-  font-family: $regular;
-  font-size: 15px;
-  line-height: 30px;
-  color: #444444;
+  @include font($regular, 15px, 30px, $gray);
 }
 
 .reviews__item-author {
-  font-family: $bold;
-  font-size: 17px;
-  line-height: 24px;
-  color: #000000;
-  margin: 0;
+  @include font($bold, 17px, 24px, $black);
+  margin: 0 0 40px 0;
   padding: 0;
-  margin-bottom: 40px;
 }
 
 .reviews__item-author-nick {
-  font-family: $regular;
-  font-size: 15px;
-  line-height: 30px;
-  color: #444444;
+  @include font($regular, 15px, 30px, $gray);
+  display: block;
 }
 
 .reviews__controls {
@@ -52,19 +38,28 @@
   margin-bottom: 40px;
 }
 
-.reviews__prev-btn,
-.reviews__next-btn {
+.reviews__btn {
+  font-size: 0;
   flex-shrink: 1;
   width: 50%;
   height: 50px;
-  background-color: #ffffff;
-  border: 1px solid #ececec;
+  border: 1px solid $light-gray;
+  background-color: $white;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--prev {
+    background-image: url('../../img/icon-left-arrow.svg');
+  }
+
+  &--next {
+    background-image: url('../../img/icon-right-arrow.svg');
+  }
 }
 
 .reviews__write-btn {
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
-
 
 //End

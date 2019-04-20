@@ -3,19 +3,14 @@
 }
 
 .purchase-popup__title {
-  width: 100%;
-  font-family: $bold;
-  font-size: 25px;
-  line-height: 30px;
+  @include font($bold, 25px, 30px, $black);
   text-transform: uppercase;
   text-align: center;
+  width: 100%;
 }
 
 .purchase-popup__size-text {
-  font-family: $regular;
-  font-size: 15px;
-  line-height: 30px;
-  color: #444444;
+  @include font($regular, 15px, 30px, $gray);
   text-align: center;
 }
 
@@ -35,22 +30,19 @@
   width: 82px;
   height: 52px;
 
-  color: #444444;
-  font-family: $bold;
-  font-size: 17px;
-  line-height: 16px;
+  @include font($bold, 17px, 16px, $gray);
   text-align: center;
   padding-top: 15px;
 }
 
 .purchase-popup__size-input:checked + label {
-  border: 2px solid #64d1bc;
+  border: 2px solid $blue;
 }
 
 .purchase-popup__submit-btn {
   width: 100%;
-  background-color: #64d1bc;
-  border-color: #64d1bc;
+  background-color: $blue;
+  border-color: $blue;
 }
 
 //End

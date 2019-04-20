@@ -1,13 +1,26 @@
 .main-menu {
-
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
 }
 
 .main-menu__item {
+  box-sizing: border-box;
+  border-bottom: 1px solid $light-gray;
 
+  &:first-child {
+    border-top: 1px solid $light-gray;
+  }
 }
 
 .main-menu__link {
+  @include font($bold, 17px, 24px, $black);
+  text-decoration: none;
 
+  display: block;
+  padding: 30px 75px;
+  height: 100%;
 }
 
 /// End

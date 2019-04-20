@@ -1,0 +1,12 @@
+.page-title {
+  @include font($bold, 27px, 30px, $black);
+  text-align: center;
+
+  background-color: $title-bg;
+  margin: 0;
+  padding-top: 75px;
+  padding-bottom: 70px;
+  margin-bottom: 30px;
+}
+
+//End

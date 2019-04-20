@@ -1,20 +1,23 @@
 .navigation {
-  padding: 0 30px;
-  background-color: #ffffff;
+  padding: 0;
+  background-color: $white;
 }
 
 .navigation__top {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 
   min-height: 80px;
 }
 
 .navigation__logo-link {
+  //
 }
 
 .navigation__logo-img {
+  //
 }
 
 .navigation__burger-button {
@@ -26,43 +29,85 @@
   font-size: 0;
   width: 20px;
   height: 2px;
-  background-color: #000000;
   border: none;
+  outline: none;
+  background-color: $black;
+
+  &--closed {
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: $black;
+      transform: translateY(5px);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: $black;
+      transform: translateY(11px);
+    }
+  }
+
+  &--opened {
+    background-color: transparent;
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: $black;
+      transform: translateY(5px) rotate(-45deg);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: $black;
+      transform: translateY(5px) rotate(45deg);
+    }
+
+    & + .navigation__popup {
+      display: block;
+    }
+  }
 }
 
-.navigation-burger-button--open::before {
-  content: '';
+.navigation__popup {
+  margin: 0;
+  padding: 0;
   position: absolute;
-  display: block;
-  width: 20px;
-  height: 2px;
-  background-color: #000000;
-  transform: translateY(6px);
-}
-
-.navigation-burger-button--open::after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 20px;
-  height: 2px;
-  background-color: #000000;
-  transform: translateY(12px);
+  width: 100%;
+  top: 80px;
+  background-color: $white;
+  z-index: 2;
+  display: none;
 }
 
 .navigation-burger-button--open {
+  //
 }
 
 .navigation__main-menu {
-  display: none;
+  //
 }
 
 .navigation__search {
-  display: none;
+  //
 }
 
 .navigation__cart {
-  display: none;
+  //
 }
 
 /////////////////////// The end

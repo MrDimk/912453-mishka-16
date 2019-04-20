@@ -1,13 +1,13 @@
+//Базовый стиль кнопки
+
 .button {
   height: 52px;
   box-sizing: border-box;
-  border: 2px solid #707070;
+  border: 2px solid $gray;
   background-color: #fff;
-  font-family: $bold;
-  font-size: 17px;
-  line-height: 20px;
+
+  @include font($bold, 17px, 20px, $gray);
   text-transform: uppercase;
-  color: #444444;
 }
 
 //End

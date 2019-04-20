@@ -19,16 +19,12 @@
 }
 
 .site-footer__copyright {
-  font-family: $bold;
-  font-size: 19px;
-  line-height: 18px;
-  color: #000000;
-
+  @include font($bold, 19px, 18px, $black);
   margin-right: 30px;
 }
 
 .site-footer__copyright-logo {
-  color: #64d1ba;
+  color: $blue;
 }
 
 //End

@@ -4,22 +4,14 @@
 }
 
 .contacts__title {
-  font-family: $bold;
-  font-size: 18px;
-  line-height: 30px;
-
+  @include font($bold, 18px, 30px, $black);
   padding: 0 30px;
 }
 
 .contacts__email,
 .contacts__address {
-  font-family: $regular;
-  font-size: 15px;
-  line-height: 30px;
-  color: #444444;
-
+  @include font($regular, 15px, 30px, $gray);
   margin: 0;
-
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -48,7 +40,6 @@
 .contacts__feedback {
   margin: 0;
   padding: 0 30px;
-
 }
 
 .contacts__feedback-btn {
