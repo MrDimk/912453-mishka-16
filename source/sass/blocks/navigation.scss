@@ -57,6 +57,7 @@
 
   &--opened {
     background-color: transparent;
+
     &::before {
       content: "";
       position: absolute;
