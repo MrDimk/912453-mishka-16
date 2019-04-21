@@ -18,8 +18,8 @@
 
 ////////////////////VARIABLES////////////////
 //Fonts
-$bold: 'Open-Sans-Bold';
-$regular: 'Open-Sans';
+$bold: "Open-Sans-Bold";
+$regular: "Open-Sans";
 
 //colors
 $black: #000000;
@@ -39,7 +39,6 @@ $title-bg: #f1f1f1;
   line-height: $height;
   color: $color;
 }
-
 
 ////////////////////IMPORTS//////////////////
 @import "blocks/visually-hidden.scss";
@@ -65,7 +64,6 @@ $title-bg: #f1f1f1;
 @import "blocks/products.scss";
 @import "blocks/product.scss";
 @import "blocks/production.scss";
-
 
 /////////////////////////////////////////////
 // * {

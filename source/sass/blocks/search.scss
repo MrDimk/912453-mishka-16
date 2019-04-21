@@ -13,11 +13,11 @@
   align-items: center;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     width: 18px;
     height: 18px;
-    background-image: url('../../img/icon-search.svg');
+    background-image: url("../../img/icon-search.svg");
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.2;
@@ -38,6 +38,5 @@
 .search__submit-button {
   display: none;
 }
-
 
 ///// End
