@@ -3,41 +3,47 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
     <header class="site-header">
       <nav class="site-header__navigation navigation">
-        <div class="navigation__logo">
+        <div class="navigation__top">
           <a href="index.html" class="navigation__logo-link">
             <img
-              src="https://via.placeholder.com/86x35"
+              src="img/logo-mobile.svg"
+              width="86"
+              height="35"
               alt="Мишка - магазин товаров ручной работы"
               class="navigation__logo-img"
             />
           </a>
+          <button class="navigation__burger-button navigation__burger-button--closed">Меню</button>
+          <div class="navigation__popup">
+            <ul class="navigation__main-menu main-menu">
+              <li class="main-menu__item">
+                <a href="catalog.html" class="main-menu__link">Каталог товаров</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="form.html" class="main-menu__link">Вязание на заказ</a>
+              </li>
+            </ul>
+            <div class="navigation__search search">
+              <form action="https://echo.htmlacademy.ru" method="GET" class="search__form">
+                <input type="text" class="search__input" id="search-field" />
+                <label for="search-field" class="search__label">Поиск по сайту</label>
+                <button class="search__submit-button">Найти</button>
+              </form>
+            </div>
+            <div class="navigation__cart cart">
+              <a href="" class="cart__link">
+                <span class="cart__logo"></span>
+                <p class="cart__state">Корзина: пока пуста</p>
+              </a>
+            </div>
+          </div>
         </div>
-        <button class="navigation__burger-button navigation-burger-button--open">Меню</button>
-        <ul class="navigation__main-menu main-menu">
-          <li class="main-menu__item">
-            <a href="catalog.html" class="main-menu__link">Каталог товаров</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="form.html" class="main-menu__link">Вязание на заказ</a>
-          </li>
-          <li class="main-menu__item">
-            <form action="https://echo.htmlacademy.ru" method="GET" class="search__form">
-              <input type="text" class="search__input" />
-              <button class="search__submit-button"></button>
-            </form>
-          </li>
-          <li class="main-menu__item">
-            <a href="" class="main-menu__link">
-              <span class="main-menu__cart-logo"></span>
-              <p class="main-menu__cart">Корзина: пока пуста</p>
-            </a>
-          </li>
-        </ul>
       </nav>
     </header>
     <main class="site-page">
@@ -181,10 +187,12 @@
             <legend class="knit-order__fields-legend">тел</legend>
             <ul class="knit-order__fields-list">
               <li class="knit-order__fields-item">
-                <label for="phone-id" class="knit-order__text-label visually-hidden">Телефон:</label>
+                <label for="phone-id" class="knit-order__text-label knit-order__text-label--phone"
+                  >Телефон:</label
+                >
                 <input
                   type="text"
-                  class="knit-order__text-input knit-order__text-input--tel"
+                  class="knit-order__text-input knit-order__text-input--phone"
                   id="phone-id"
                   name="phone"
                   placeholder="+7 ХХХ ХХХ ХХ ХХ*"
@@ -196,7 +204,7 @@
             <legend class="knit-order__fields-legend">e-mail</legend>
             <ul class="knit-order__fields-list">
               <li class="knit-order__fields-item">
-                <label for="email-id" class="knit-order__text-label visually-hidden">E-mail:</label>
+                <label for="email-id" class="knit-order__text-label knit-order__text-label--email">E-mail:</label>
                 <input
                   type="text"
                   class="knit-order__text-input knit-order__text-input--email"
@@ -211,14 +219,13 @@
             <legend class="knit-order__fields-legend">Доп</legend>
             <ul class="knit-order__fields-list">
               <li class="knit-order__fields-item">
-                <label for="additionally-id" class="knit-order__textarea-label">
+                <label for="additionally-id" class="knit-order__textarea-label visually-hidden">
                   Дополнительная информация:
                 </label>
                 <textarea
                   class="knit-order__textarea-field"
                   name="additionally"
                   id="additionally-id"
-                  cols="30"
                   rows="6"
                   placeholder="Опишите все ваши пожелания к заказу"
                 ></textarea>
@@ -242,16 +249,20 @@
           <a href="#" class="social__link social__link--twitter" aria-label="Twitter"></a>
         </li>
       </ul>
-      <p class="site-footer__copyright">
-        Разработано
-      </p>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="site-footer__copyright-link">
-        <img
-          class="site-footer__copyright-logo"
-          src="https://via.placeholder.com/27x34"
-          alt="HTML Academy - HTML и CSS, уровень 2"
-        />
-      </a>
+      <div class="site-footer__bottom">
+        <p class="site-footer__copyright">
+          Разработано
+        </p>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="site-footer__copyright-link">
+          <img
+            class="site-footer__copyright-logo"
+            width="27"
+            height="34"
+            src="img/htmlacademy.svg"
+            alt="HTML Academy - HTML и CSS, уровень 2"
+          />
+        </a>
+      </div>
     </footer>
   </body>
 </html>
