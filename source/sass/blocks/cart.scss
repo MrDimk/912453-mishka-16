@@ -1,0 +1,38 @@
+.cart {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid $light-gray;
+}
+
+.cart__link {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+
+  @include font($bold, 17px, 24px, $black);
+  text-decoration: none;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 21px;
+    height: 18px;
+    margin-right: 24px;
+    background-image: url("../img/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+  }
+}
+
+.cart__state {
+  margin: 0;
+  padding: 0;
+}
+
+//End

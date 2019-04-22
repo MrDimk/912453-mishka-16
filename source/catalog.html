@@ -3,110 +3,134 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
     <header class="site-header">
       <nav class="site-header__navigation navigation">
-        <div class="navigation__logo">
-          <a href="index.html" class="navigation__logo-link">
-            <img
-              src="https://via.placeholder.com/86x35"
-              alt="Мишка - магазин товаров ручной работы"
-              class="navigation__logo-img"
-            />
-          </a>
-        </div>
-        <button class="navigation__burger-button navigation-burger-button--open">Меню</button>
-        <ul class="navigation__main-menu main-menu">
-          <li class="main-menu__item">
-            <a href="catalog.html" class="main-menu__link">Каталог товаров</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="form.html" class="main-menu__link">Вязание на заказ</a>
-          </li>
-          <li class="main-menu__item">
-            <form action="https://echo.htmlacademy.ru" method="GET" class="search__form">
-              <input type="text" class="search__input" />
-              <button class="search__submit-button"></button>
-            </form>
-          </li>
-          <li class="main-menu__item">
-            <a href="" class="main-menu__link">
-              <span class="main-menu__cart-logo"></span>
-              <p class="main-menu__cart">Корзина: пока пуста</p>
+          <div class="navigation__top">
+            <a href="index.html" class="navigation__logo-link">
+              <img
+                src="img/logo-mobile.svg"
+                width="86"
+                height="35"
+                alt="Мишка - магазин товаров ручной работы"
+                class="navigation__logo-img"
+              />
             </a>
-          </li>
-        </ul>
+            <button class="navigation__burger-button navigation__burger-button--closed">Меню</button>
+            <div class="navigation__popup">
+              <ul class="navigation__main-menu main-menu">
+                <li class="main-menu__item">
+                  <a href="catalog.html" class="main-menu__link">Каталог товаров</a>
+                </li>
+                <li class="main-menu__item">
+                  <a href="form.html" class="main-menu__link">Вязание на заказ</a>
+                </li>
+              </ul>
+              <div class="navigation__search search">
+                <form action="https://echo.htmlacademy.ru" method="GET" class="search__form">
+                  <input type="text" class="search__input" id="search-field" />
+                  <label for="search-field" class="search__label">Поиск по сайту</label>
+                  <button class="search__submit-button">Найти</button>
+                </form>
+              </div>
+              <div class="navigation__cart cart">
+                <a href="" class="cart__link">
+                  <span class="cart__logo"></span>
+                  <p class="cart__state">Корзина: пока пуста</p>
+                </a>
+              </div>
+            </div>
+          </div>
       </nav>
     </header>
     <main class="site-page">
       <h1 class="site-page__title page-title">Каталог товаров</h1>
-      <section class="site-page__catalog catalog">
-        <ul class="catalog__list">
-          <li class="product catalog__item">
-            <a href="product.html" class="product__link-title">
-              <h3 class="product__title">Зайчик-попрыгайчик</h3>
-            </a>
+      <section class="site-page__products products">
+        <ul class="products__list">
+          <li class="product products__item">
             <a href="product.html" class="product__link-img">
               <img
-                src="https://via.placeholder.com/260x195"
+                src="img/photo-hare-mobile@1x.jpg"
                 alt="Фото товара - зайчик-попрыгайчик"
                 class="product__image"
               />
             </a>
-            <p class="product__properties">Рост 30 см, вес 200 г</p>
-            <p class="product__price">1 200 руб.</p>
-            <a href="product.html" class="product__to-cart">Добавить в корзину</a>
+            <div class="product__border">
+              <a href="product.html" class="product__link-title">
+                <h3 class="product__title">Зайчик-попрыгайчик</h3>
+              </a>
+              <p class="product__properties">Рост 30 см, вес 200 г</p>
+              <div class="product__bottom">
+                <p class="product__price">1 200 руб.</p>
+                <a href="product.html" class="product__to-cart">Добавить в корзину</a>
+              </div>
+            </div>
           </li>
-          <li class="product catalog__item">
-            <a href="product.html" class="product__link-title">
-              <h3 class="product__title">Корзинка для белья</h3>
-            </a>
+          <li class="product products__item">
             <a href="product.html" class="product__link-img">
               <img
-                src="https://via.placeholder.com/260x195"
+                src="img/photo-bowl-mobile@1x.jpg"
                 alt="Фото товара - корзинка для белья"
                 class="product__image"
               />
             </a>
-            <p class="product__properties">Диаметр 15 см, высота 10 см</p>
-            <p class="product__price">690 руб.</p>
-            <a href="product.html" class="product__to-cart">Добавить в корзину</a>
+            <div class="product__border">
+              <a href="product.html" class="product__link-title">
+                <h3 class="product__title">Корзинка для белья</h3>
+              </a>
+              <p class="product__properties">Диаметр 15 см, высота 10 см</p>
+              <div class="product__bottom">
+                <p class="product__price">690 руб.</p>
+                <a href="product.html" class="product__to-cart">Добавить в корзину</a>
+              </div>
+            </div>
           </li>
-          <li class="product catalog__item">
-            <a href="product.html" class="product__link-title">
-              <h3 class="product__title">Большая корзинка для игрушек</h3>
-            </a>
+          <li class="product products__item">
             <a href="product.html" class="product__link-img">
               <img
-                src="https://via.placeholder.com/260x195"
+                src="img/photo-toys-mobile@1x.jpg"
                 alt="Фото товара - большая корзинка для игрушек"
                 class="product__image"
               />
             </a>
-            <p class="product__properties">Диаметр 30 см, высота 30 см</p>
-            <p class="product__price">1 500 руб.</p>
-            <a href="product.html" class="product__to-cart">Добавить в корзину</a>
+            <div class="product__border">
+              <a href="product.html" class="product__link-title">
+                <h3 class="product__title">Большая корзинка для игрушек</h3>
+              </a>
+              <p class="product__properties">Диаметр 30 см, высота 30 см</p>
+              <div class="product__bottom">
+                <p class="product__price">1 500 руб.</p>
+                <a href="product.html" class="product__to-cart">Добавить в корзину</a>
+              </div>
+            </div>
           </li>
         </ul>
       </section>
       <section class="site-page__production production">
-        <h2 class="production__title">Процесс производства</h2>
-        <div class="production__video">
-          <img
-            src="https://via.placeholder.com/260x150"
-            alt="Видео - процусс производства"
-            class="product__image"
-          />
+        <div class="production__border">
+          <div class="production__top">
+            <span class="production__video-icon"></span>
+            <h2 class="production__title">Процесс производства</h2>
+          </div>
+          <div class="production__video">
+            <img
+              src="img/video-mobile@1x.jpg"
+              alt="Видео - процесс производства"
+              class="production__image"
+            />
+            <button class="production__play-btn">Смотреть видео</button>
+          </div>
+          <p class="production__description">
+            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
+            появляются наши товары.
+          </p>
+          <button class="production__purchase-btn button">Сделать заказ</button>
         </div>
-        <p class="production__description">
-          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
-          появляются наши товары.
-        </p>
-        <button class="production__purchase-btn button">Сделать заказ</button>
       </section>
-      <section class="site-page__purchase-popup purchase-popup modal">
+      <section class="site-page__purchase-popup purchase-popup modal modal--closed">
         <h2 class="purchase-popup__title">Добавить в корзину</h2>
         <form action="https://echo.htmlacademy.ru" method="POST" class="purchase-popup__form">
           <p class="purchase-popup__size-text">
@@ -161,16 +185,20 @@
           <a href="#" class="social__link social__link--twitter" aria-label="Twitter"></a>
         </li>
       </ul>
-      <p class="site-footer__copyright">
-        Разработано
-      </p>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="site-footer__copyright-link">
-        <img
-          class="site-footer__copyright-logo"
-          src="https://via.placeholder.com/27x34"
-          alt="HTML Academy - HTML и CSS, уровень 2"
-        />
-      </a>
+      <div class="site-footer__bottom">
+        <p class="site-footer__copyright">
+          Разработано
+        </p>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="site-footer__copyright-link">
+          <img
+            class="site-footer__copyright-logo"
+            width="27"
+            height="34"
+            src="img/htmlacademy.svg"
+            alt="HTML Academy - HTML и CSS, уровень 2"
+          />
+        </a>
+      </div>
     </footer>
   </body>
 </html>

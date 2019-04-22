@@ -1,0 +1,48 @@
+.contacts {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__title {
+  @include font($bold, 18px, 30px, $black);
+  padding: 0 30px;
+}
+
+.contacts__email,
+.contacts__address {
+  @include font($regular, 15px, 30px, $gray);
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contacts__email-title,
+.contacts__address-title {
+  width: 80px;
+  padding-left: 30px;
+}
+
+.contacts__map {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  width: 100%;
+  min-height: 450px;
+}
+
+.contacts__map iframe {
+  left: 0;
+  width: 100%;
+}
+
+.contacts__feedback {
+  margin: 0;
+  padding: 0 30px;
+}
+
+.contacts__feedback-btn {
+  width: 100%;
+  margin-bottom: 40px;
+}
+//End

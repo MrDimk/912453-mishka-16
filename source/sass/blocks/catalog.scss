@@ -1,0 +1,46 @@
+.catalog {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-sizing: border-box;
+  padding: 0 30px;
+  width: 100%;
+  min-height: 103px;
+
+  @include font($bold, 19px, 24px, $white);
+  text-decoration: none;
+
+  &--interior {
+    background-color: $blue;
+  }
+
+  &--toys {
+    background-color: $dark-blue;
+  }
+}
+
+.catalog__icon {
+  padding-left: 30px;
+  opacity: 0.5;
+  width: 60px;
+  height: 60px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--interior {
+    background-image: url("../img/icon-interior.svg");
+  }
+
+  &--toys {
+    background-image: url("../img/icon-toy.svg");
+  }
+}
+
+//End
