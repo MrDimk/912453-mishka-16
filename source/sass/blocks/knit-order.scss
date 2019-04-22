@@ -144,6 +144,10 @@
   &--email {
     padding-top: 5px;
   }
+
+  &::placeholder {
+    color: rgba($gray, 0.3);
+  }
 }
 
 .knit-order__textarea-field {
@@ -154,6 +158,10 @@
   width: 100%;
   min-height: 142px;
   border: 2px solid $gray;
+
+  &::placeholder {
+    color: rgba($gray, 0.3);
+  }
 }
 
 .knit-order__footnote {
