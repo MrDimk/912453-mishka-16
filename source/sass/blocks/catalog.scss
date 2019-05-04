@@ -1,46 +1,67 @@
 .catalog {
-  margin: 0;
+  margin: -75px 0 0 0;
   padding: 0;
+
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding: 0 30px;
+    width: 100%;
+    min-height: 103px;
+
+    @include font($bold, 19px, 24px, $white);
+    text-decoration: none;
+
+    &--interior {
+      background-color: $blue;
+    }
+
+    &--toys {
+      background-color: $dark-blue;
+    }
+  }
+
+  &__icon {
+    padding-left: 30px;
+    opacity: 0.5;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &--interior {
+      background-image: url("../img/icon-interior.svg");
+    }
+
+    &--toys {
+      background-image: url("../img/icon-toy.svg");
+    }
+  }
 }
 
-.catalog__link {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/////////////////////////////////////////////////
 
-  box-sizing: border-box;
-  padding: 0 30px;
-  width: 100%;
-  min-height: 103px;
+@media (min-width: $tablet-width) {
+  .catalog {
+    margin-top: -119px;
+    padding: 0 45px;
+    display: flex;
+    justify-content: center;
 
-  @include font($bold, 19px, 24px, $white);
-  text-decoration: none;
-
-  &--interior {
-    background-color: $blue;
-  }
-
-  &--toys {
-    background-color: $dark-blue;
+    &__link {
+      min-height: 119px;
+    }
   }
 }
 
-.catalog__icon {
-  padding-left: 30px;
-  opacity: 0.5;
-  width: 60px;
-  height: 60px;
+/////////////////////////////////////////////////
 
-  background-repeat: no-repeat;
-  background-position: center;
-
-  &--interior {
-    background-image: url("../img/icon-interior.svg");
-  }
-
-  &--toys {
-    background-image: url("../img/icon-toy.svg");
+@media (min-width: $desktop-width) {
+  .catalog__link {
+    max-width: 525px;
   }
 }
-
-//End
+///////////////////////////////////////////////// The end

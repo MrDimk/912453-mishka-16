@@ -1,176 +1,298 @@
 .knit-order {
-  //
-}
+  padding: 0 30px;
 
-.knit-order__text {
-  @include font($regular, 13px, 24px, $gray);
-  margin: 0;
-  padding: 0 0 30px 0;
-}
-
-.knit-order__fieldset {
-  position: relative;
-  margin: 0 0 15px 0;
-  padding: 0;
-  border: none;
-  border-top: 1px solid $blue;
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }
-}
-
-.knit-order__fields-legend {
-  @include font($bold, 17px, 16px, $blue);
-  text-transform: uppercase;
-  margin: 0;
-  padding: 0 27px 0 0;
-  background-color: $white;
-}
-
-.knit-order__fields-list {
-  list-style: none;
-  margin: 0;
-  padding: 10px 0;
-}
-
-.knit-order__fields-item {
-  margin: 0;
-  padding: 10px 0;
-}
-
-.knit-order__radio-label {
-  @include font($bold, 17px, 18px, $black);
-  display: flex;
-  align-items: center;
-
-  &::before {
-    content: "";
-    display: inline-block;
-    box-sizing: border-box;
-    width: 40px;
-    height: 40px;
-    border: 2px solid $gray;
-    border-radius: 50%;
-    margin-right: 22px;
-    flex-shrink: 0;
-  }
-}
-
-.knit-order__radio-input:checked + .knit-order__radio-label::before {
-  background-image: radial-gradient($blue 6px, $white 7px);
-}
-
-.knit-order__checkbox-label {
-  @include font($bold, 17px, 18px, $black);
-  display: flex;
-  align-items: center;
-
-  &::before {
-    content: "";
-    display: inline-block;
-    box-sizing: border-box;
-    width: 40px;
-    height: 39px;
-    border: 2px solid $gray;
-    margin-right: 22px;
-    flex-shrink: 0;
-  }
-}
-
-.knit-order__checkbox-input:checked + .knit-order__checkbox-label::before {
-  background-image: url("../img/icon-tick.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 22px 16px;
-}
-
-.knit-order__text-label {
-  @include font($bold, 17px, 18px, $black);
-  display: block;
-  width: 100%;
-
-  &--phone {
-    position: absolute;
-    font-size: 0;
+  &__text {
+    @include font($regular, 13px, 24px, $gray);
+    margin: 0;
+    padding: 0 0 30px 0;
   }
 
-  &--email {
-    position: absolute;
-    font-size: 0;
+  &__fieldset {
+    position: relative;
+    margin: 0 0 15px 0;
+    padding: 0;
+    border: none;
+    border-top: 1px solid $blue;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 
-  &--phone::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    width: 25px;
-    height: 24px;
-    background-image: url("../img/icon-phone.svg");
+  &__fields-legend {
+    @include font($bold, 17px, 16px, $blue);
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 27px 0 0;
+    background-color: $white;
+  }
+
+  &__fields-list {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  &__fields-item {
+    position: relative;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  &__radio-label {
+    @include font($bold, 17px, 18px, $black);
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      box-sizing: border-box;
+      width: 40px;
+      height: 40px;
+      border: 2px solid $gray;
+      border-radius: 50%;
+      margin-right: 22px;
+      flex-shrink: 0;
+    }
+  }
+
+  &__radio-input:checked + .knit-order__radio-label::before {
+    background-image: radial-gradient($blue 6px, $white 7px);
+  }
+
+  &__checkbox-label {
+    @include font($bold, 17px, 18px, $black);
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      box-sizing: border-box;
+      width: 40px;
+      height: 39px;
+      border: 2px solid $gray;
+      margin-right: 22px;
+      flex-shrink: 0;
+    }
+  }
+
+  &__checkbox-input:checked + .knit-order__checkbox-label::before {
+    background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.2;
+    background-size: 22px 16px;
   }
 
-  &--email::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    width: 32px;
-    height: 21px;
-    font-size: 0;
-    background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.2;
+  &__text-label {
+    @include font($bold, 17px, 18px, $black);
+    display: block;
+    width: 100%;
+
+    &--phone {
+      position: absolute;
+      font-size: 0;
+    }
+
+    &--email {
+      position: absolute;
+      font-size: 0;
+    }
+
+    &--phone::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 25px;
+      height: 24px;
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.2;
+    }
+
+    &--email::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 32px;
+      height: 21px;
+      font-size: 0;
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.2;
+    }
+  }
+
+  &__text-input {
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 18px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid $black;
+
+    @include font($regular, 17px, 18px, $gray);
+
+    &--phone {
+      padding-top: 5px;
+    }
+
+    &--email {
+      padding-top: 5px;
+    }
+
+    &::placeholder {
+      color: rgba($gray, 0.3);
+    }
+  }
+
+  &__textarea-field {
+    @include font($regular, 17px, 18px, $gray);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 18px;
+    width: 100%;
+    min-height: 142px;
+    border: 2px solid $gray;
+
+    &::placeholder {
+      color: rgba($gray, 0.3);
+    }
+  }
+
+  &__bottom {
+    padding: 0 0 30px 0;
+  }
+
+  &__footnote {
+    @include font($regular, 14px, 16px, $gray);
+    margin: 0;
+    padding: 0 0 30px 0;
+  }
+
+  &__submit-btn {
+    width: 100%;
   }
 }
 
-.knit-order__text-input {
-  display: block;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 18px 0;
-  width: 100%;
-  border: none;
-  border-bottom: 2px solid $black;
+/////////////////////////////////////////////////
 
-  @include font($regular, 17px, 18px, $gray);
+@media (min-width: $tablet-width) {
+  .knit-order {
+    padding: 0;
+    position: relative;
 
-  &--phone {
-    padding-top: 5px;
-  }
+    &__text {
+      padding: 0 50px;
+      font-size: 17px;
+      line-height: 30px;
+    }
 
-  &--email {
-    padding-top: 5px;
-  }
+    &__fieldset {
+      padding: 0 50px 0 215px;
+      border-top: none;
 
-  &::placeholder {
-    color: rgba($gray, 0.3);
+      &--color,
+      &--phone,
+      &--email {
+        margin-bottom: 0;
+        background-color: $title-bg;
+      }
+    }
+
+    &__fields-legend {
+      position: absolute;
+      left: 50px;
+      top: 20px;
+      background-color: transparent;
+    }
+
+    &__fields-list {
+      &--color {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        & .knit-order {
+          &__fields-item {
+            width: 50%;
+          }
+        }
+      }
+
+      &--name {
+        & .knit-order {
+          &__fields-item {
+            display: flex;
+            align-items: center;
+          }
+
+          &__text-label {
+            width: auto;
+            margin-right: 25px;
+            padding: 18px 0;
+          }
+        }
+      }
+    }
+
+    &__text-input {
+      background-color: transparent;
+    }
+
+    &__bottom {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 50px 0;
+    }
+
+    &__footnote {
+      padding: 0;
+    }
+
+    &__submit-btn {
+      width: 230px;
+    }
   }
 }
 
-.knit-order__textarea-field {
-  @include font($regular, 17px, 18px, $gray);
-  box-sizing: border-box;
-  margin: 0;
-  padding: 18px;
-  width: 100%;
-  min-height: 142px;
-  border: 2px solid $gray;
+/////////////////////////////////////////////////
 
-  &::placeholder {
-    color: rgba($gray, 0.3);
+@media (min-width: $desktop-width) {
+  .knit-order {
+    &__text {
+      padding: 0 0 0 175px;
+      width: 700px;
+    }
+
+    &__fieldset {
+      padding: 0 0 0 175px;
+    }
+
+    &__fields-list {
+      width: 700px;
+
+      &--color {
+        & .knit-order {
+          &__fields-item {
+            width: 33%;
+          }
+        }
+      }
+    }
+
+    &__bottom {
+      width: 700px;
+      padding-left: 175px;
+      padding-right: 0;
+    }
   }
 }
 
-.knit-order__footnote {
-  @include font($regular, 14px, 16px, $gray);
-  margin: 0 0 30px 0;
-  padding: 0;
-}
-
-.knit-order__submit-btn {
-  width: 100%;
-}
-//End
+///////////////////////////////////////////////// The end

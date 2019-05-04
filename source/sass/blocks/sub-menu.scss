@@ -1,0 +1,17 @@
+.sub-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    padding: 25px 0;
+    width: 220px;
+  }
+
+  &__link {
+    @include font($bold, 15px, 24px, $black);
+    text-decoration: none;
+  }
+}
+
+///////////////////////////////////////////////// The end

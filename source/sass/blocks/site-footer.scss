@@ -6,25 +6,50 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &__logo-link {
+    display: none;
+  }
+
+  &__social {
+    width: 140px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__copyright {
+    @include font($bold, 19px, 18px, $black);
+    margin-right: 30px;
+  }
+
+  &__copyright-logo {
+    color: $blue;
+  }
 }
 
-.site-footer__social {
-  width: 140px;
+/////////////////////////////////////////////////
+
+@media (min-width: $tablet-width) {
+  .site-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1050px;
+    margin: 0 auto;
+
+    &__logo-link {
+      display: block;
+      font-size: 0;
+      width: 102px;
+      height: 34px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("../img/logo-mobile.svg");
+    }
+  }
 }
 
-.site-footer__bottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.site-footer__copyright {
-  @include font($bold, 19px, 18px, $black);
-  margin-right: 30px;
-}
-
-.site-footer__copyright-logo {
-  color: $blue;
-}
-
-//End
+///////////////////////////////////////////////// The end
