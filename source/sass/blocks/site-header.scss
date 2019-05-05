@@ -3,12 +3,28 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  &__navigation {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+  }
 }
 
-.site-header__navigation {
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0;
+@media (min-width: $tablet-width) {
+  .site-header {
+    padding: 0 50px;
+    border-bottom: 1px solid $light-gray;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-header {
+    &__navigation {
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+  }
 }
 
 // The end

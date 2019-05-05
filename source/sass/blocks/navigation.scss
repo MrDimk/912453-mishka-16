@@ -77,10 +77,6 @@
 
 @media (min-width: $tablet-width) {
   .navigation {
-    border-bottom: 1px solid $light-gray;
-    margin: 0;
-    padding: 0 50px;
-    width: auto;
     justify-content: space-between;
     flex-direction: row;
 
@@ -100,7 +96,7 @@
       display: flex;
       position: absolute;
       top: 105px;
-      left: 50px;
+      left: 0;
       width: auto;
       z-index: 1;
     }
@@ -120,7 +116,7 @@
     &__delivery {
       position: absolute;
       top: 105px;
-      right: 50px;
+      right: 0;
       display: block;
       list-style: none;
       margin: 0;
@@ -144,9 +140,6 @@
 
 @media (min-width: $desktop-width) {
   .navigation {
-    max-width: 1150px;
-    margin: 0 auto;
-
     &__logo-link {
       background-image: url("../img/logo-desktop.svg");
       margin: 0;

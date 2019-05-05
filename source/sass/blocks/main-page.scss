@@ -37,7 +37,7 @@
       display: block;
       height: 24px;
       width: 100vw;
-      transform: translateY(-100%);
+      transform: translateY(-95%);
     }
 
     &__zig-zag-line {
@@ -67,6 +67,10 @@
 
 @media (min-width: $desktop-width) {
   .main-page {
+    &__zig-zag-fill {
+      height: 34px;
+    }
+
     &__top-product {
       max-width: 1150px;
       margin: 0 auto;

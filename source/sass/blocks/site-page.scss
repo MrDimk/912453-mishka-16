@@ -20,7 +20,9 @@
 
   //////// form.html
   &__knit-order {
-    margin: 0 0 55px 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
 }
 
@@ -28,23 +30,21 @@
 
 @media (min-width: $tablet-width) {
   .site-page {
-    padding: 0 50px;
-
     &__title {
       position: relative;
       padding: 105px 0 80px;
       width: 100vw;
-      left: -50px;
+      left: 0;
     }
 
     &__zig-zag-fill {
       display: block;
       margin: 0;
       position: absolute;
-      left: -50px;
+      left: 0;
       height: 24px;
       width: 100vw;
-      transform: translateY(-100%);
+      transform: translateY(-95%);
     }
 
     &__products {
@@ -55,11 +55,6 @@
     &__production {
       margin: 0 0 60px;
       width: 100%;
-    }
-
-    //////// form.html
-    &__knit-order {
-      margin: 0 0 55px 0;
     }
   }
 }
@@ -73,15 +68,13 @@
       margin: 110px auto 25px;
     }
 
+    &__zig-zag-fill {
+      height: 34px;
+    }
+
     &__production {
       max-width: 1050px;
       margin: 0 auto;
-    }
-
-    //////// form.html
-    &__knit-order {
-      max-width: 1050px;
-      margin: 0 auto 55px;
     }
   }
 }
