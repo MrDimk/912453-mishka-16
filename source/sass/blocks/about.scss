@@ -84,6 +84,7 @@
     }
 
     &__items {
+      box-sizing: border-box;
       width: 50%;
 
       &--left {
@@ -91,7 +92,7 @@
       }
 
       &--right {
-        padding-left: 50px;
+        padding-left: 0;
       }
     }
 

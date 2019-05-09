@@ -8,51 +8,52 @@
   </head>
   <body>
     <header class="site-header">
-      <nav class="site-header__navigation navigation">
-        <input type="checkbox" id="burger-btn" class="navigation__burger-btn-checkbox" />
-        <label for="burger-btn" class="navigation__burger-btn-label">Меню</label>
-        <a href="index.html" class="navigation__logo-link">
-          Мишка - магазин товаров ручной работы
-        </a>
-        <ul class="navigation__main-menu main-menu">
-          <li class="main-menu__item">
-            <a href="catalog.html" class="main-menu__link">Каталог товаров</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="form.html" class="main-menu__link">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="navigation__sub-menu sub-menu">
-          <li class="sub-menu__item">
-            <a href="catalog.html" class="sub-menu__link">Новые поступления</a>
-          </li>
-          <li class="sub-menu__item">
-            <a href="form.html" class="sub-menu__link">Распродажа</a>
-          </li>
-        </ul>
-        <ul class="navigation__purchase-menu">
-          <li class="navigation__search search">
-            <form action="https://echo.htmlacademy.ru" method="GET" class="search__form">
-              <input type="text" class="search__input" id="search-field" />
-              <label for="search-field" class="search__label">Поиск по сайту</label>
-              <button class="search__submit-button">Найти</button>
-            </form>
-          </li>
-          <li class="navigation__cart cart">
-            <a href="" class="cart__link">
-              <span class="cart__logo"></span>
-              <p class="cart__state">Корзина: пока пуста</p>
-            </a>
-          </li>
-        </ul>
-        <ul class="navigation__delivery">
-          <li class="navigation__delivery-item">
-            <a href="delivery.html" class="navigation__delivery-link">
-              Бесплатная доставка по России
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container container--nav">
+        <nav class="site-header__navigation navigation">
+          <button class="navigation__burger-btn navigation__burger-btn--closed">Меню</button>
+          <a href="index.html" class="navigation__logo-link">
+            Мишка - магазин товаров ручной работы
+          </a>
+          <ul class="navigation__main-menu main-menu">
+            <li class="main-menu__item">
+              <a href="catalog.html" class="main-menu__link">Каталог товаров</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="form.html" class="main-menu__link">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="navigation__sub-menu sub-menu">
+            <li class="sub-menu__item">
+              <a href="catalog.html" class="sub-menu__link">Новые поступления</a>
+            </li>
+            <li class="sub-menu__item">
+              <a href="form.html" class="sub-menu__link">Распродажа</a>
+            </li>
+          </ul>
+          <ul class="navigation__purchase-menu">
+            <li class="navigation__search search">
+              <form action="https://echo.htmlacademy.ru" method="GET" class="search__form">
+                <input type="text" class="search__input" id="search-field" />
+                <label for="search-field" class="search__label">Поиск по сайту</label>
+                <button class="search__submit-button">Найти</button>
+              </form>
+            </li>
+            <li class="navigation__cart cart">
+              <a href="" class="cart__link">
+                <span class="cart__logo"></span>
+                <p class="cart__state">Корзина: пока пуста</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="navigation__delivery">
+            <li class="navigation__delivery-item">
+              <a href="delivery.html" class="navigation__delivery-link">
+                Бесплатная доставка по России
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main-page">
       <div class="main-page__baner main-baner">
@@ -60,24 +61,24 @@
           Милые штуки ручной<br />
           работы для дома
         </h1>
-      </div>
-      <div class="main-page__catalog catalog">
-        <a href="catalog.html" class="catalog__link catalog__link--interior">
-          Предметы интерьера
-          <span class="catalog__icon catalog__icon--interior"></span>
-        </a>
-        <a href="catalog.html" class="catalog__link catalog__link--toys">
-          Детские игрушки
-          <span class="catalog__icon catalog__icon--toys"></span>
-        </a>
+        <div class="main-baner__catalog catalog">
+          <a href="catalog.html" class="catalog__link catalog__link--interior">
+            Предметы интерьера
+            <span class="catalog__icon catalog__icon--interior"></span>
+          </a>
+          <a href="catalog.html" class="catalog__link catalog__link--toys">
+            Детские игрушки
+            <span class="catalog__icon catalog__icon--toys"></span>
+          </a>
+        </div>
       </div>
       <div class="main-page__zig-zag-fill zig-zag zig-zag--fill"></div>
-      <section class="main-page__top-product top-product">
-        <div class="top-product__header">
-          <h2 class="top-product__title">Вязаные корзинки</h2>
-          <span class="top-product__mark">Товар недели</span>
-        </div>
-        <div class="top-product__container">
+      <div class="container">
+        <section class="main-page__top-product top-product">
+          <div class="top-product__header">
+            <h2 class="top-product__title">Вязаные корзинки</h2>
+            <span class="top-product__mark">Товар недели</span>
+          </div>
           <div class="top-product__content">
             <p class="top-product__description">
               Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
@@ -109,67 +110,72 @@
             <p class="top-product__price">Цена: 990 руб.</p>
             <button class="top-product__purchase-button button">Заказать</button>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
       <div class="main-page__line zig-zag zig-zag--line"></div>
-      <section class="main-page__about about">
-        <h2 class="about__title">Коротко о нас:</h2>
-        <div class="about__container">
-          <ul class="about__items about__items--left">
-            <li class="about__item">
-              <span class="about__item-icon about__item-icon--flower"></span>
-              <p class="about__item-text">Экологически чистые материалы</p>
-            </li>
-            <li class="about__item">
-              <span class="about__item-icon about__item-icon--money"></span>
-              <p class="about__item-text">Скандинавский стиль по российской цене</p>
-            </li>
-            <li class="about__item">
-              <span class="about__item-icon about__item-icon--heart"></span>
-              <p class="about__item-text">Увеличивает лайки на фотографиях</p>
+      <div class="container">
+        <section class="main-page__about about">
+          <h2 class="about__title">Коротко о нас:</h2>
+          <div class="about__container">
+            <ul class="about__items about__items--left">
+              <li class="about__item">
+                <span class="about__item-icon about__item-icon--flower"></span>
+                <p class="about__item-text">Экологически чистые материалы</p>
+              </li>
+              <li class="about__item">
+                <span class="about__item-icon about__item-icon--money"></span>
+                <p class="about__item-text">Скандинавский стиль по российской цене</p>
+              </li>
+              <li class="about__item">
+                <span class="about__item-icon about__item-icon--heart"></span>
+                <p class="about__item-text">Увеличивает лайки на фотографиях</p>
+              </li>
+            </ul>
+            <ul class="about__items about__items--right">
+              <li class="about__item">
+                <span class="about__item-icon about__item-icon--yarn"></span>
+                <p class="about__item-text">Связано вручную с любовью и умилением</p>
+              </li>
+              <li class="about__item">
+                <span class="about__item-icon about__item-icon--rocket"></span>
+                <p class="about__item-text">Поддержка отечественного производителя</p>
+              </li>
+              <li class="about__item">
+                <span class="about__item-icon about__item-icon--gift"></span>
+                <p class="about__item-text">Поставляется в подарочной упаковке</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div class="container">
+        <section class="main-page__reviews reviews">
+          <h2 class="reviews__title">Отзывы</h2>
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <p class="reviews__item-text">
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+                лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек
+                в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше
+                лайков!
+              </p>
+              <p class="reviews__item-author">
+                Анастасия Красильникова
+                <span class="reviews__item-author-nick">@misssssiskras</span>
+              </p>
             </li>
           </ul>
-          <ul class="about__items about__items--right">
-            <li class="about__item">
-              <span class="about__item-icon about__item-icon--yarn"></span>
-              <p class="about__item-text">Связано вручную с любовью и умилением</p>
-            </li>
-            <li class="about__item">
-              <span class="about__item-icon about__item-icon--rocket"></span>
-              <p class="about__item-text">Поддержка отечественного производителя</p>
-            </li>
-            <li class="about__item">
-              <span class="about__item-icon about__item-icon--gift"></span>
-              <p class="about__item-text">Поставляется в подарочной упаковке</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="main-page__reviews reviews">
-        <h2 class="reviews__title">Отзывы</h2>
-        <ul class="reviews__list">
-          <li class="reviews__item">
-            <p class="reviews__item-text">
-              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
-              как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и
-              мои фотографии сразу стали более стильными, а также набирают больше лайков!
-            </p>
-            <p class="reviews__item-author">
-              Анастасия Красильникова
-              <span class="reviews__item-author-nick">@misssssiskras</span>
-            </p>
-          </li>
-        </ul>
-        <div class="reviews__controls">
-          <button class="reviews__btn reviews__btn--prev">Назад</button>
-          <button class="reviews__btn reviews__btn--next">Вперед</button>
-        </div>
-        <button class="reviews__write-btn button">Написать</button>
-      </section>
+          <div class="reviews__controls">
+            <button class="reviews__btn reviews__btn--prev">Назад</button>
+            <button class="reviews__btn reviews__btn--next">Вперед</button>
+          </div>
+          <button class="reviews__write-btn button">Написать</button>
+        </section>
+      </div>
       <div class="main-page__zig-zag-line zig-zag zig-zag--line"></div>
       <section class="main-page__contacts contacts">
-        <h3 class="contacts__title">Контакты</h3>
         <div class="contacts__content">
+          <h3 class="contacts__title">Контакты</h3>
           <p class="contacts__email">
             <span class="contacts__email-title">e-mail:</span>
             <span class="contacts__email-value">info@mimimishkashop.ru</span>

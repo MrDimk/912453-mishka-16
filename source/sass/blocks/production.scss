@@ -1,6 +1,6 @@
 .production {
   position: relative;
-  padding: 0 30px;
+  padding: 0;
 
   &__border {
     box-sizing: border-box;
@@ -79,8 +79,6 @@
 
 @media (min-width: $tablet-width) {
   .production {
-    padding: 0;
-
     &__border {
       padding: 0;
     }

@@ -4,24 +4,16 @@
   padding: 0;
   box-sizing: border-box;
 
+  &__container {
+    padding: 0 30px;
+  }
+
   &__zig-zag-fill {
     display: none;
   }
 
   &__zig-zag-line {
     height: 7px;
-  }
-
-  &__top-product {
-    padding: 0 30px;
-  }
-
-  &__about {
-    padding: 0 30px;
-  }
-
-  &__reviews {
-    padding: 0 30px;
   }
 
   &__contacts {
@@ -44,20 +36,15 @@
       display: block;
       height: 15px;
       width: 100vw;
+      margin-bottom: 50px;
     }
 
     &__top-product {
       box-sizing: border-box;
-      padding: 0 50px;
       margin-bottom: 50px;
     }
 
-    &__about {
-      padding: 0 50px;
-    }
-
     &__reviews {
-      padding: 0 50px;
       margin-bottom: 50px;
     }
   }
@@ -67,29 +54,18 @@
 
 @media (min-width: $desktop-width) {
   .main-page {
+    padding-bottom: 100px;
+
     &__zig-zag-fill {
       height: 34px;
     }
 
-    &__top-product {
-      max-width: 1150px;
-      margin: 0 auto;
-    }
-
-    &__about {
-      max-width: 1050px;
-      margin: 0 auto;
-    }
-
     &__reviews {
       box-sizing: border-box;
-      max-width: 1050px;
-      margin: 50px auto;
     }
 
     &__contacts {
-      max-width: 1050px;
-      margin: 40px auto 0;
+      margin-top: 40px;
     }
   }
 }

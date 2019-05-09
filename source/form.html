@@ -8,51 +8,52 @@
   </head>
   <body>
     <header class="site-header">
-      <nav class="site-header__navigation navigation">
-        <input type="checkbox" id="burger-btn" class="navigation__burger-btn-checkbox" />
-        <label for="burger-btn" class="navigation__burger-btn-label">Меню</label>
-        <a href="index.html" class="navigation__logo-link">
-          Мишка - магазин товаров ручной работы
-        </a>
-        <ul class="navigation__main-menu main-menu">
-          <li class="main-menu__item">
-            <a href="catalog.html" class="main-menu__link">Каталог товаров</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="form.html" class="main-menu__link">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="navigation__sub-menu sub-menu">
-          <li class="sub-menu__item">
-            <a href="catalog.html" class="sub-menu__link">Новые поступления</a>
-          </li>
-          <li class="sub-menu__item">
-            <a href="form.html" class="sub-menu__link">Распродажа</a>
-          </li>
-        </ul>
-        <ul class="navigation__purchase-menu">
-          <li class="navigation__search search">
-            <form action="https://echo.htmlacademy.ru" method="GET" class="search__form">
-              <input type="text" class="search__input" id="search-field" />
-              <label for="search-field" class="search__label">Поиск по сайту</label>
-              <button class="search__submit-button">Найти</button>
-            </form>
-          </li>
-          <li class="navigation__cart cart">
-            <a href="" class="cart__link">
-              <span class="cart__logo"></span>
-              <p class="cart__state">Корзина: пока пуста</p>
-            </a>
-          </li>
-        </ul>
-        <ul class="navigation__delivery">
-          <li class="navigation__delivery-item">
-            <a href="delivery.html" class="navigation__delivery-link">
-              Бесплатная доставка по России
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container container--nav">
+        <nav class="site-header__navigation navigation">
+          <button class="navigation__burger-btn navigation__burger-btn--closed">Меню</button>
+          <a href="index.html" class="navigation__logo-link">
+            Мишка - магазин товаров ручной работы
+          </a>
+          <ul class="navigation__main-menu main-menu">
+            <li class="main-menu__item">
+              <a href="catalog.html" class="main-menu__link">Каталог товаров</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="form.html" class="main-menu__link">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="navigation__sub-menu sub-menu">
+            <li class="sub-menu__item">
+              <a href="catalog.html" class="sub-menu__link">Новые поступления</a>
+            </li>
+            <li class="sub-menu__item">
+              <a href="form.html" class="sub-menu__link">Распродажа</a>
+            </li>
+          </ul>
+          <ul class="navigation__purchase-menu">
+            <li class="navigation__search search">
+              <form action="https://echo.htmlacademy.ru" method="GET" class="search__form">
+                <input type="text" class="search__input" id="search-field" />
+                <label for="search-field" class="search__label">Поиск по сайту</label>
+                <button class="search__submit-button">Найти</button>
+              </form>
+            </li>
+            <li class="navigation__cart cart">
+              <a href="" class="cart__link">
+                <span class="cart__logo"></span>
+                <p class="cart__state">Корзина: пока пуста</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="navigation__delivery">
+            <li class="navigation__delivery-item">
+              <a href="delivery.html" class="navigation__delivery-link">
+                Бесплатная доставка по России
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="site-page">
       <h1 class="site-page__title page-title">
@@ -61,14 +62,14 @@
       <div class="site-page__zig-zag-fill zig-zag zig-zag--fill"></div>
       <section class="site-page__knit-order knit-order">
         <h2 class="knit-order__title visually-hidden">Форма заказа</h2>
-        <div class="knit-order__container">
+        <div class="container">
           <p class="knit-order__text">
             Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
             свяжемся с вами, чтобы уточнить детали.
           </p>
         </div>
         <form action="https://echo.htmlacademy.ru" method="POST" class="knit-order__form">
-          <div class="knit-order__container">
+          <div class="container">
             <fieldset class="knit-order__fieldset knit-order__fieldset--type">
               <legend class="knit-order__fields-legend">Тип</legend>
               <ul class="knit-order__fields-list knit-order__fields-list--type">
@@ -98,7 +99,7 @@
               </ul>
             </fieldset>
           </div>
-          <div class="knit-order__container knit-order__container--fill">
+          <div class="container container--fill">
             <fieldset class="knit-order__fieldset knit-order__fieldset--color">
               <legend class="knit-order__fields-legend">Цвет</legend>
               <ul class="knit-order__fields-list knit-order__fields-list--color">
@@ -165,7 +166,7 @@
               </ul>
             </fieldset>
           </div>
-          <div class="knit-order__container">
+          <div class="container">
             <fieldset class="knit-order__fieldset knit-order__fieldset--name">
               <legend class="knit-order__fields-legend">ФИО</legend>
               <ul class="knit-order__fields-list knit-order__fields-list--name">
@@ -202,7 +203,7 @@
               </ul>
             </fieldset>
           </div>
-          <div class="knit-order__container knit-order__container--fill">
+          <div class="container container--fill">
             <fieldset class="knit-order__fieldset knit-order__fieldset--phone">
               <legend class="knit-order__fields-legend">тел</legend>
               <ul class="knit-order__fields-list knit-order__fields-list--phone">
@@ -238,7 +239,7 @@
               </ul>
             </fieldset>
           </div>
-          <div class="knit-order__container">
+          <div class="container">
             <fieldset class="knit-order__fieldset">
               <legend class="knit-order__fields-legend">Доп</legend>
               <ul class="knit-order__fields-list knit-order__fields-list--additionally">

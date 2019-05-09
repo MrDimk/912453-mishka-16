@@ -1,10 +1,14 @@
 .contacts {
-  padding: 0;
   position: relative;
+  padding: 0;
+
+  &__content {
+    padding: 0 30px;
+  }
 
   &__title {
     @include font($bold, 18px, 30px, $black);
-    padding: 0 30px;
+    padding: 0;
   }
 
   &__email,
@@ -19,10 +23,10 @@
   &__email-title,
   &__address-title {
     width: 80px;
-    padding-left: 30px;
   }
 
   &__map {
+    position: relative;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -51,10 +55,18 @@
   .contacts {
     padding-bottom: 55px;
 
+    &__content {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 40px 50px;
+    }
+
     &__title {
+      width: 100%;
       font-size: 43px;
       line-height: 50px;
-      padding: 0 50px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -69,11 +81,18 @@
       }
     }
 
-    &__content {
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      padding: 40px 50px;
+    &__email-title,
+    &__address-title {
+      width: auto;
+      padding-right: 25px;
+    }
+
+    &__email {
+      width: 50%;
+    }
+
+    &__address {
+      width: 50%;
     }
 
     &__map {
@@ -97,20 +116,33 @@
 @media (min-width: $desktop-width) {
   .contacts {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: flex-start;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 50px;
     min-height: 457px;
-    padding-bottom: 105px;
 
     &__content {
       box-sizing: border-box;
       width: 50%;
       flex-direction: column;
-      padding-left: 145px;
+    }
+
+    &__email {
+      width: 350px;
+      padding-left: 125px;
+    }
+
+    &__address {
+      width: 350px;
+      padding-left: 125px;
+      padding-bottom: 85px;
     }
 
     &__map {
       width: 50%;
-      position: absolute;
       right: 0;
       padding: 0;
     }
@@ -118,7 +150,7 @@
     &__title {
       flex-direction: row-reverse;
       justify-content: flex-end;
-      padding-left: 64px;
+      padding-left: 14px;
 
       &::after {
         margin: 0 64px 0 0;
@@ -126,9 +158,9 @@
     }
 
     &__bottom {
-      justify-content: flex-start;
-      padding-left: 175px;
-      margin-top: auto;
+      position: absolute;
+      bottom: 0;
+      padding: 0 0 0 175px;
     }
   }
 }

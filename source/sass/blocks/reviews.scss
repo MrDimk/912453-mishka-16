@@ -67,10 +67,8 @@
 @media (min-width: $tablet-width) {
   .reviews {
     min-height: 457px;
-    background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: left;
     padding-top: 80px;
+    padding-left: 50px;
 
     display: flex;
     justify-content: space-between;
@@ -111,6 +109,20 @@
       order: 5;
       transform: translateY(-100px);
     }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 350px;
+      background-image: url("../img/review@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: left;
+      z-index: -2;
+    }
   }
 }
 
@@ -119,6 +131,10 @@
 @media (min-width: $desktop-width) {
   .reviews {
     padding: 0 0 0 175px;
+
+    & ::before {
+      left: 50px;
+    }
 
     &__item-text {
       padding-right: 105px;

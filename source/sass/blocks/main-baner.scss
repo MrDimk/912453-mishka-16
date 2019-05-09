@@ -4,16 +4,21 @@
   background-position-x: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 373px;
-
+  height: 500px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
 
   &__title {
     @include font($bold, 27px, 30px, $black);
     width: 260px;
     text-align: center;
+  }
+
+  &__catalog {
+    margin: 0;
+    align-self: flex-end;
   }
 }
 
