@@ -22,10 +22,17 @@
     &__list {
       flex-direction: row;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
 
     &__item {
       width: 316px;
+
+      &:nth-child(3n + 2) {
+        margin-left: 50px;
+        margin-right: auto;
+        justify-self: flex-start;
+      }
     }
   }
 }

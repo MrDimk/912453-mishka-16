@@ -30,7 +30,6 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    min-height: 457px;
 
     & iframe {
       left: 0;
@@ -95,10 +94,6 @@
       width: 50%;
     }
 
-    &__map {
-      padding-bottom: 55px;
-    }
-
     &__bottom {
       display: flex;
       justify-content: space-around;
@@ -122,12 +117,13 @@
     max-width: 1150px;
     margin: 0 auto;
     padding: 0 50px;
-    min-height: 457px;
 
     &__content {
       box-sizing: border-box;
       width: 50%;
       flex-direction: column;
+      align-self: stretch;
+      padding-bottom: 60px;
     }
 
     &__email {
@@ -159,7 +155,7 @@
 
     &__bottom {
       position: absolute;
-      bottom: 0;
+      bottom: 3px;
       padding: 0 0 0 175px;
     }
   }
