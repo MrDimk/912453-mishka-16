@@ -1,70 +1,123 @@
 //"О нас" - блок тезисной информации с заголовком и иконками
 
 .about {
-  margin: 0;
-}
+  box-sizing: border-box;
 
-.about__title {
-  @include font($bold, 25px, 30px, $black);
-}
-
-.about__items {
-  margin: 0;
-  margin-bottom: 60px;
-  padding: 0;
-}
-
-.about__item {
-  list-style: none;
-  margin: 0;
-  margin-bottom: 30px;
-  padding: 0;
-}
-
-.about__item-icon {
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  &--flower {
-    background-image: url("../img/icon-feature-flower.svg");
-    width: 32px;
-    height: 37px;
+  &__title {
+    @include font($bold, 25px, 30px, $black);
   }
 
-  &--money {
-    background-image: url("../img/icon-feature-money.svg");
-    width: 47px;
-    height: 27px;
+  &__container {
+    margin-bottom: 60px;
   }
 
-  &--heart {
-    background-image: url("../img/icon-feature-heart.svg");
-    width: 34px;
-    height: 27px;
+  &__items {
+    margin: 0;
+    padding: 0;
   }
 
-  &--yarn {
-    background-image: url("../img/icon-feature-ball.svg");
-    width: 35px;
-    height: 34px;
+  &__item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
-  &--rocket {
-    background-image: url("../img/icon-feature-rocket.svg");
-    width: 55px;
-    height: 23px;
+  &__item-icon {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &--flower {
+      background-image: url("../img/icon-feature-flower.svg");
+      width: 32px;
+      height: 37px;
+    }
+
+    &--money {
+      background-image: url("../img/icon-feature-money.svg");
+      width: 47px;
+      height: 27px;
+    }
+
+    &--heart {
+      background-image: url("../img/icon-feature-heart.svg");
+      width: 34px;
+      height: 27px;
+    }
+
+    &--yarn {
+      background-image: url("../img/icon-feature-ball.svg");
+      width: 35px;
+      height: 34px;
+    }
+
+    &--rocket {
+      background-image: url("../img/icon-feature-rocket.svg");
+      width: 55px;
+      height: 23px;
+    }
+
+    &--gift {
+      background-image: url("../img/icon-feature-gift.svg");
+      width: 33px;
+      height: 32px;
+    }
   }
 
-  &--gift {
-    background-image: url("../img/icon-feature-gift.svg");
-    width: 33px;
-    height: 32px;
+  &__item-text {
+    @include font($bold, 17px, 20px, $black);
   }
 }
 
-.about__item-text {
-  @include font($bold, 17px, 20px, $black);
+/////////////////////////////////////////////////
+
+@media (min-width: $tablet-width) {
+  .about {
+    &__container {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__title {
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    &__items {
+      box-sizing: border-box;
+      width: 50%;
+
+      &--left {
+        padding-right: 50px;
+      }
+
+      &--right {
+        padding-left: 0;
+      }
+    }
+
+    &__item {
+      min-height: 100px;
+    }
+
+    &__item-text {
+      font-size: 20px;
+      line-height: 22px;
+    }
+  }
 }
 
-//End
+/////////////////////////////////////////////////
+
+@media (min-width: $desktop-width) {
+  .about {
+    padding: 0 175px;
+
+    &__title {
+      font-size: 53px;
+      line-height: 57px;
+    }
+  }
+}
+
+///////////////////////////////////////////////// The end

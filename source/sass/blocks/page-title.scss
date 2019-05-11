@@ -1,12 +1,17 @@
 .page-title {
   @include font($bold, 27px, 30px, $black);
   text-align: center;
-
   background-color: $title-bg;
-  margin: 0;
-  padding-top: 75px;
-  padding-bottom: 70px;
-  margin-bottom: 30px;
+  padding: 75px 30px 70px;
 }
 
-//End
+/////////////////////////////////////////////////
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    padding: 105px 0 80px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+///////////////////////////////////////////////// The end

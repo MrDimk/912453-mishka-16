@@ -1,0 +1,18 @@
+.zig-zag {
+  position: relative;
+  padding: 0;
+  background-size: 100%;
+  z-index: 2;
+
+  &--fill {
+    left: 0;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+  }
+
+  &--line {
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: no-repeat;
+  }
+}
+///////////////////////////////////////////////// The end

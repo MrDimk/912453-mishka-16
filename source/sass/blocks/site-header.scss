@@ -1,11 +1,31 @@
 .site-header {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  &__main-nav {
+    margin: 0;
+    width: 100%;
+  }
 }
 
-.site-header__navigation {
-  margin: 0;
-  padding: 0;
+@media (min-width: $tablet-width) {
+  .site-header {
+    &__main-nav {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-header {
+    &__main-nav {
+      max-width: 1150px;
+      margin: 0 auto;
+    }
+  }
 }
 
 // The end

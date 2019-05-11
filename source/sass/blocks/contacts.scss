@@ -1,48 +1,164 @@
 .contacts {
-  margin: 0;
+  position: relative;
   padding: 0;
+
+  &__content {
+    padding: 0 30px;
+  }
+
+  &__title {
+    @include font($bold, 18px, 30px, $black);
+    padding: 0;
+  }
+
+  &__email,
+  &__address {
+    @include font($regular, 15px, 30px, $gray);
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__email-title,
+  &__address-title {
+    width: 80px;
+  }
+
+  &__map {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    & iframe {
+      left: 0;
+      width: 100%;
+      border: none;
+    }
+  }
+
+  &__bottom {
+    margin: 0;
+    padding: 30px;
+  }
+
+  &__feedback-btn {
+    width: 100%;
+  }
 }
 
-.contacts__title {
-  @include font($bold, 18px, 30px, $black);
-  padding: 0 30px;
+/////////////////////////////////////////////////
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding-bottom: 55px;
+
+    &__content {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 40px 50px;
+    }
+
+    &__title {
+      width: 100%;
+      font-size: 43px;
+      line-height: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &::after {
+        content: "";
+        width: 47px;
+        height: 81px;
+        background-image: url("../img/icon-flag.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    &__email-title,
+    &__address-title {
+      width: auto;
+      padding-right: 25px;
+    }
+
+    &__email {
+      width: 50%;
+    }
+
+    &__address {
+      width: 50%;
+    }
+
+    &__bottom {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &__feedback-btn {
+      width: 230px;
+      margin: 0;
+    }
+  }
 }
 
-.contacts__email,
-.contacts__address {
-  @include font($regular, 15px, 30px, $gray);
-  margin: 0;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
+/////////////////////////////////////////////////
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: flex-start;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 50px;
+
+    &__content {
+      box-sizing: border-box;
+      width: 50%;
+      flex-direction: column;
+      align-self: stretch;
+      padding-bottom: 60px;
+    }
+
+    &__email {
+      width: 350px;
+      padding-left: 125px;
+    }
+
+    &__address {
+      width: 350px;
+      padding-left: 125px;
+      padding-bottom: 85px;
+    }
+
+    &__map {
+      width: 50%;
+      right: 0;
+      padding: 0;
+    }
+
+    &__title {
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      padding-left: 14px;
+
+      &::after {
+        margin: 0 64px 0 0;
+      }
+    }
+
+    &__bottom {
+      position: absolute;
+      bottom: 3px;
+      padding: 0 0 0 175px;
+    }
+  }
 }
 
-.contacts__email-title,
-.contacts__address-title {
-  width: 80px;
-  padding-left: 30px;
-}
-
-.contacts__map {
-  margin: 0;
-  margin-bottom: 40px;
-  padding: 0;
-  width: 100%;
-  min-height: 450px;
-}
-
-.contacts__map iframe {
-  left: 0;
-  width: 100%;
-}
-
-.contacts__feedback {
-  margin: 0;
-  padding: 0 30px;
-}
-
-.contacts__feedback-btn {
-  width: 100%;
-  margin-bottom: 40px;
-}
-//End
+///////////////////////////////////////////////// The end

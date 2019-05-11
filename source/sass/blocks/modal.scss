@@ -5,16 +5,25 @@
   top: 50vh;
   transform: translateY(-50%);
   background-color: #ffffff;
+  z-index: 100;
   box-shadow: 0 5px 10px 0 rgba($color: #000000, $alpha: 0.5),
     0 0 0 100vh rgba($color: #ffffff, $alpha: 0.9);
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
 }
 
-.modal--closed {
-  display: none;
-}
+/////////////////////////////////////////////////
 
-.modal--opened {
-  display: block;
+@media (min-width: $tablet-width) {
+  .modal {
+    left: 50vw;
+    transform: translate(-50%, -50%);
+  }
 }
-
-//End
+///////////////////////////////////////////////// The end
