@@ -1,8 +1,9 @@
 .main-page {
   position: relative;
-  margin: 0;
+  margin: 0 0 20px;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 
   &__container {
     padding: 0 30px;
@@ -12,13 +13,21 @@
     display: none;
   }
 
-  &__zig-zag-line {
-    width: 100%;
-    height: 7px;
+  &__top-product {
+    margin-bottom: 18px;
+  }
+
+  &__line {
+    position: relative;
+    left: -5%;
+    right: -5%;
+    width: 110%;
+    height: 8px;
+    margin: 0;
   }
 
   &__contacts {
-    padding: 0;
+    margin-top: 38px;
   }
 }
 
@@ -26,6 +35,8 @@
 
 @media (min-width: $tablet-width) {
   .main-page {
+    margin-bottom: 35px;
+
     &__zig-zag-fill {
       display: block;
       height: 24px;
@@ -33,21 +44,30 @@
       transform: translateY(-95%);
     }
 
-    &__zig-zag-line {
+    &__line {
       display: block;
-      height: 17px;
-      width: 100vw;
+      height: 20px;
       left: 0;
-      margin-bottom: 50px;
+      margin: 0;
     }
 
     &__top-product {
       box-sizing: border-box;
+      margin-top: 0;
+      padding: 0;
       margin-bottom: 50px;
     }
 
+    &__about {
+      margin: 40px 0 35px;
+    }
+
     &__reviews {
-      margin-bottom: 50px;
+      margin: 35px 0 75px;
+    }
+
+    &__contacts {
+      margin-top: 8px;
     }
   }
 }
@@ -56,24 +76,33 @@
 
 @media (min-width: $desktop-width) {
   .main-page {
-    padding-bottom: 100px;
+    padding-bottom: 20px;
 
     &__zig-zag-fill {
       height: 34px;
     }
 
-    &__zig-zag-line {
+    &__top-product {
+      margin-top: 20px;
+    }
+
+    &__line {
       height: 23px;
       width: 1050px;
-      margin: 65px auto 70px;
+      margin: 0 auto 0;
+    }
+
+    &__about {
+      margin-top: 55px;
     }
 
     &__reviews {
       box-sizing: border-box;
+      margin: 44px 0 125px;
     }
 
     &__contacts {
-      margin-top: 40px;
+      margin-top: 72px;
     }
   }
 }

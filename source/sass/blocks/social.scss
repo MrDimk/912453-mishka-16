@@ -1,10 +1,13 @@
 .social {
-  margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  .social__item {
+    margin: 0 20px;
+  }
 
   &__link {
     display: block;
@@ -27,6 +30,14 @@
       width: 23px;
       height: 20px;
     }
+  }
+}
+
+/////////////////////////////////////////////////@at-root
+
+@media (min-width: $tablet-width) {
+  .social__item {
+    margin: 0 20px;
   }
 }
 

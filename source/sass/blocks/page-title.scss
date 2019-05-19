@@ -2,16 +2,28 @@
   @include font($bold, 27px, 30px, $black);
   text-align: center;
   background-color: $title-bg;
-  padding: 75px 30px 70px;
+  padding: 70px 30px 77px;
 }
 
 /////////////////////////////////////////////////
 
 @media (min-width: $tablet-width) {
   .page-title {
-    padding: 105px 0 80px;
+    padding: 55px 0 90px;
     font-size: 43px;
     line-height: 50px;
   }
 }
+
+
+/////////////////////////////////////////////////
+
+@media (min-width: $desktop-width) {
+  .page-title {
+    font-size: 53px;
+    line-height: 57px;
+    padding: 53px 0 120px;
+  }
+}
+
 ///////////////////////////////////////////////// The end

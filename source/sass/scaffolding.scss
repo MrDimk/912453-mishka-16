@@ -14,6 +14,14 @@ body {
 // }
 /////////////////////////////////////////////
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .container {
   box-sizing: border-box;
   width: 100%;
@@ -23,15 +31,15 @@ body {
   &--nav {
     padding: 0;
   }
-
-  &--fill {
-    background-color: $title-bg;
-  }
 }
 
 @media (min-width: $tablet-width) {
   .container {
     padding: 0 50px;
+
+    &--fill {
+      background-color: $title-bg;
+    }
   }
 }
 

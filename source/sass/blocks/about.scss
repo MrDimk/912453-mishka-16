@@ -5,10 +5,11 @@
 
   &__title {
     @include font($bold, 25px, 30px, $black);
+    margin: 26px 0;
   }
 
   &__container {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 
   &__items {
@@ -19,53 +20,52 @@
   &__item {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 0 18px 0;
   }
 
   &__item-icon {
     display: block;
+    width: 55px;
+    height: 55px;
     background-repeat: no-repeat;
     background-position: center;
 
     &--flower {
       background-image: url("../img/icon-feature-flower.svg");
-      width: 32px;
-      height: 37px;
+      transform: translate(-2px, -2px);
     }
 
     &--money {
       background-image: url("../img/icon-feature-money.svg");
-      width: 47px;
-      height: 27px;
+      transform: translate(-4px, -6px);
     }
 
     &--heart {
       background-image: url("../img/icon-feature-heart.svg");
-      width: 34px;
-      height: 27px;
+      transform: translate(-2px, -1px);
     }
 
     &--yarn {
       background-image: url("../img/icon-feature-ball.svg");
-      width: 35px;
-      height: 34px;
+      transform: translate(-7px, -1px);
     }
 
     &--rocket {
       background-image: url("../img/icon-feature-rocket.svg");
-      width: 55px;
-      height: 23px;
+      transform: translate(-6px, -5px);
+
     }
 
     &--gift {
       background-image: url("../img/icon-feature-gift.svg");
-      width: 33px;
-      height: 32px;
+      transform: translate(-8px, -3px);
     }
   }
 
   &__item-text {
     @include font($bold, 17px, 20px, $black);
+    margin: 0;
+    padding: 5px 0;
   }
 }
 
@@ -76,9 +76,12 @@
     &__container {
       display: flex;
       justify-content: center;
+      padding: 40px 0 0;
     }
 
     &__title {
+      margin: 0;
+      padding: 5px 0;
       font-size: 43px;
       line-height: 50px;
     }
@@ -98,6 +101,7 @@
 
     &__item {
       min-height: 100px;
+      padding-bottom: 46px;
     }
 
     &__item-text {
@@ -116,6 +120,10 @@
     &__title {
       font-size: 53px;
       line-height: 57px;
+    }
+
+    &__container {
+      padding: 35px 0 0;
     }
   }
 }

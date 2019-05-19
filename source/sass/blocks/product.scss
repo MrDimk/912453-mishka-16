@@ -1,9 +1,9 @@
 .product {
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 30px;
 
   &__link-img {
     width: 100%;
@@ -14,10 +14,13 @@
   &__image {
     margin: 0;
     padding: 0;
+    min-width: 334px;
     width: 100%;
+    height: auto;
   }
 
   &__content {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -26,7 +29,7 @@
     box-sizing: border-box;
     margin: 0;
     margin-top: -3px;
-    padding: 30px 28px;
+    padding: 26px 26px 23px;
     width: 100%;
     border: 1px solid $light-gray;
   }
@@ -47,8 +50,8 @@
   &__properties {
     @include font($regular, 13px, 30px, $gray);
     align-self: flex-start;
-    margin: 0 0 25px 0;
-    padding: 0;
+    margin: 0 0 13px 0;
+    padding: 5px 0;
   }
 
   &__bottom {
@@ -58,14 +61,14 @@
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    padding: 20px 0 0 0;
+    padding: 16px 0 5px;
     border-top: 1px solid #ececec;
   }
 
   &__price {
     @include font($bold, 15px, 24px, $black);
     margin: 0;
-    padding: 5px 0 0 0;
+    padding: 6px 0 0 0;
   }
 
   &__to-cart {
@@ -82,14 +85,20 @@
 @media (min-width: $tablet-width) {
   .product {
     flex-direction: row;
+    justify-content: center;
 
     &__title {
       font-size: 20px;
     }
 
+    &__link-img {
+      width: auto;
+    }
+
     &__content {
       box-sizing: border-box;
       min-height: 334px;
+      height: 100%;
     }
 
     &__properties {
@@ -97,11 +106,17 @@
     }
 
     &__bottom {
-      margin-top: auto;
+      margin: auto 0 0;
+      padding: 23px 0 2px;
     }
 
     &__price {
       font-size: 17px;
+      padding: 0 5px;
+    }
+
+    &__to-cart {
+      margin-right: 6px;
     }
   }
 }
@@ -111,6 +126,30 @@
 @media (min-width: $desktop-width) {
   .product {
     flex-direction: column;
+
+    &__image {
+      min-width: 316px;
+    }
+
+    &__content {
+      min-height: 197px;
+      padding: 26px 30px 26px 26px;
+    }
+
+    &__bottom {
+      align-self: flex-start;
+      margin: auto 0 0;
+      padding: 20px 0 0;
+    }
+
+    &__price {
+      padding: 0;
+      margin: 0;
+    }
+
+    &__to-cart {
+      margin-right: 0;
+    }
   }
 }
 //End

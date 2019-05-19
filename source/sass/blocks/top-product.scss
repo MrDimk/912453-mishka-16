@@ -1,5 +1,6 @@
 .top-product {
   position: relative;
+  padding: 20px 0;
 
   &__image {
     width: 100%;
@@ -8,6 +9,7 @@
 
   &__title {
     @include font($bold, 25px, 30px, $black);
+    margin: 5px 0;
   }
 
   &__mark {
@@ -17,6 +19,8 @@
 
   &__description {
     @include font($regular, 15px, 24px, $gray);
+    margin: 0;
+    padding: 25px 0 15px 0;
   }
 
   &__properties {
@@ -38,13 +42,13 @@
   }
 
   &__property-value {
-    padding: 10px 0;
+    padding: 10px 0 10px 15px;
   }
 
   &__price {
     @include font($bold, 17px, 24px, $gray);
-    margin: 0;
-    padding: 28px 0;
+    margin: 0 0 5px 0;
+    padding: 20px 0;
     text-align: center;
   }
 
@@ -59,9 +63,10 @@
   .top-product {
     display: flex;
     flex-wrap: wrap;
+    padding: 5px 0 0;
 
     &__header {
-      margin: 0;
+      margin: 0 0 50px;
       padding: 0;
       width: 100%;
       display: flex;
@@ -73,11 +78,12 @@
       @include font($bold, 43px, 50px, $black);
       display: inline-block;
       margin-right: auto;
+      padding: 0;
     }
 
     &__mark {
       width: 70px;
-      margin-right: 25px;
+      margin: 3px 30px 0 0;
       line-height: 17px;
       text-align: center;
     }
@@ -93,11 +99,22 @@
 
     &__description {
       width: auto;
+      padding: 0;
+      margin: 0 0 30px 0;
       font-size: 17px;
+      line-height: 30px;
     }
 
     &__properties {
-      width: auto;
+      width: 100%;
+    }
+
+    &__property-name {
+      padding: 10px 0 10px;
+    }
+
+    &__property-value {
+      padding: 10px 0 10px 0;
     }
 
     &__image {
@@ -108,7 +125,7 @@
 
     &__purchase {
       position: absolute;
-      bottom: 0;
+      bottom: 1px;
       box-sizing: border-box;
       width: 50%;
       padding: 0 45px 0 0;
@@ -118,6 +135,7 @@
     &__price {
       font-size: 20px;
       line-height: 24px;
+      margin-bottom: 15px;
     }
   }
 }
@@ -131,7 +149,7 @@
 
     &__header {
       position: absolute;
-      padding-left: 50px;
+      padding: 50px 0 0 50px;
     }
 
     &__title {
@@ -149,8 +167,12 @@
     }
 
     &__content {
-      padding: 145px 60px 135px 175px;
+      padding: 157px 60px 135px 175px;
       justify-content: flex-start;
+    }
+
+    &__description {
+      margin-bottom: 50px;
     }
 
     &__purchase {

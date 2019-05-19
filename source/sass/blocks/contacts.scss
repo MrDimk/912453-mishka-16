@@ -4,17 +4,20 @@
 
   &__content {
     padding: 0 30px;
+    margin-bottom: 14px;
   }
 
   &__title {
     @include font($bold, 18px, 30px, $black);
     padding: 0;
+    margin: 0 0 20px 0;
   }
 
   &__email,
   &__address {
     @include font($regular, 15px, 30px, $gray);
     margin: 0;
+    padding: 5px 0 25px 0;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -23,6 +26,28 @@
   &__email-title,
   &__address-title {
     width: 80px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__email-value {
+    color: $gray;
+    text-decoration: none;
+    border-bottom: 1px solid $blue;
+    margin: 0;
+    padding: 0;
+    margin-bottom: auto;
+
+    &:hover {
+      color: $dark-blue-hover;
+      border-bottom: 1px solid $dark-blue-hover;
+    }
+
+    &:active {
+      color: $dark-blue-hover;
+      border-bottom: 1px solid $dark-blue-hover;
+      opacity: 0.3;
+    }
   }
 
   &__map {
@@ -30,6 +55,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 455px;
 
     & iframe {
       left: 0;
@@ -39,11 +65,12 @@
   }
 
   &__bottom {
-    margin: 0;
-    padding: 30px;
+    margin: 40px 0 20px 0;
+    padding: 0 30px;
   }
 
   &__feedback-btn {
+    font-size: 18px;
     width: 100%;
   }
 }
@@ -52,17 +79,19 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding-bottom: 55px;
+    padding: 0;
 
     &__content {
       position: relative;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      padding: 40px 50px;
+      padding: 0 50px;
+      margin-bottom: 35px;
     }
 
     &__title {
+      margin: 40px 2px 24px 0;
       width: 100%;
       font-size: 43px;
       line-height: 50px;
@@ -83,23 +112,27 @@
     &__email-title,
     &__address-title {
       width: auto;
-      padding-right: 25px;
+      padding-right: 20px;
     }
 
     &__email {
       width: 50%;
+      font-size: 18px;
     }
 
     &__address {
       width: 50%;
+      font-size: 18px;
     }
 
     &__bottom {
+      margin: 55px 0 20px 0;
       display: flex;
       justify-content: space-around;
     }
 
     &__feedback-btn {
+      font-size: 17px;
       width: 230px;
       margin: 0;
     }
@@ -115,7 +148,6 @@
     box-sizing: border-box;
     align-items: flex-start;
     max-width: 1150px;
-    margin: 0 auto;
     padding: 0 50px;
 
     &__content {
@@ -123,7 +155,13 @@
       width: 50%;
       flex-direction: column;
       align-self: stretch;
-      padding-bottom: 60px;
+      padding: 20px 50px 60px;
+    }
+
+    &__title {
+      font-size: 53px;
+      line-height: 57px;
+      margin-bottom: 30px;
     }
 
     &__email {
@@ -157,6 +195,10 @@
       position: absolute;
       bottom: 3px;
       padding: 0 0 0 175px;
+    }
+
+    &__feedback-btn {
+      margin: 0 0 25px;
     }
   }
 }

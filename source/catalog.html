@@ -7,47 +7,49 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
-      <header class="site-header">
-        <nav class="site-header__main-nav main-nav">
-          <button class="main-nav__burger-btn main-nav__burger-btn--opened">Меню</button>
-          <a href="index.html" class="main-nav__logo-link" aria-label="На главную страницу">
-            <picture class="main-nav__logo-img">
-              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg" />
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
-              <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка" />
-            </picture>
-          </a>
-          <ul class="main-nav__list main-nav__list--catalog">
-            <li class="main-nav__item main-nav__item--catalog">
-              <a href="catalog.html" class="main-nav__link main-nav__link--catalog">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item main-nav__item--catalog">
-              <a href="form.html" class="main-nav__link main-nav__link--catalog">Вязание на заказ</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list main-nav__list--user">
-            <li class="main-nav__item main-nav__item--search">
-              <a href="#" class="main-nav__link main-nav__link--search">Поиск по сайту</a>
-            </li>
-            <li class="main-nav__item main-nav__item--cart">
-              <a href="#" class="main-nav__link main-nav__link--cart">Корзина: пока пуста</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list main-nav__list--promo">
-            <li class="main-nav__item main-nav__item--promo">
-              <a href="#" class="main-nav__link main-nav__link--promo">Новые поступления</a>
-            </li>
-            <li class="main-nav__item main-nav__item--promo">
-              <a href="#" class="main-nav__link main-nav__link--promo">Распродажа</a>
-            </li>
-          </ul>
-          <div class="main-nav__delivery">
-            <a href="" class="main-nav__link main-nav__link--delivery">
-              Бесплатная доставка по России
+    <header class="site-header">
+      <nav class="site-header__main-nav main-nav">
+        <button class="main-nav__burger-btn">Меню</button>
+        <a href="index.html" class="main-nav__logo-link" aria-label="На главную страницу">
+          <picture class="main-nav__logo-img">
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg" />
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
+            <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка" />
+          </picture>
+        </a>
+        <ul class="main-nav__list main-nav__list--catalog">
+          <li class="main-nav__item main-nav__item--catalog">
+            <a href="catalog.html" class="main-nav__link main-nav__link--catalog">
+              Каталог товаров
             </a>
-          </div>
-        </nav>
-      </header>
+          </li>
+          <li class="main-nav__item main-nav__item--catalog">
+            <a href="form.html" class="main-nav__link main-nav__link--catalog">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list main-nav__list--user">
+          <li class="main-nav__item main-nav__item--search">
+            <a href="#" class="main-nav__link main-nav__link--search">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item main-nav__item--cart">
+            <a href="#" class="main-nav__link main-nav__link--cart">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list main-nav__list--promo">
+          <li class="main-nav__item main-nav__item--promo">
+            <a href="#" class="main-nav__link main-nav__link--promo">Новые поступления</a>
+          </li>
+          <li class="main-nav__item main-nav__item--promo">
+            <a href="#" class="main-nav__link main-nav__link--promo">Распродажа</a>
+          </li>
+        </ul>
+        <div class="main-nav__delivery main-nav__delivery">
+          <a href="" class="main-nav__link main-nav__link--delivery">
+            Бесплатная доставка по России
+          </a>
+        </div>
+      </nav>
+    </header>
     <main class="site-page">
       <h1 class="site-page__title page-title">Каталог товаров</h1>
       <div class="site-page__zig-zag-fill zig-zag zig-zag--fill"></div>
@@ -56,11 +58,15 @@
           <ul class="products__list">
             <li class="product products__item">
               <a href="product.html" class="product__link-img">
-                <img
-                  src="img/photo-hare-mobile@1x.jpg"
-                  alt="Фото товара - зайчик-попрыгайчик"
-                  class="product__image"
-                />
+                <picture class="product__image">
+                  <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg" />
+                  <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg" />
+                  <img
+                    src="img/photo-hare-mobile@1x.jpg"
+                    class="product__image"
+                    alt="Фото товара - зайчик-попрыгайчик"
+                  />
+                </picture>
               </a>
               <div class="product__content">
                 <a href="product.html" class="product__link-title">
@@ -75,11 +81,15 @@
             </li>
             <li class="product products__item">
               <a href="product.html" class="product__link-img">
-                <img
-                  src="img/photo-bowl-mobile@1x.jpg"
-                  alt="Фото товара - корзинка для белья"
-                  class="product__image"
-                />
+                <picture class="product__image">
+                  <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg" />
+                  <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg" />
+                  <img
+                    src="img/photo-bowl-mobile@1x.jpg"
+                    class="product__image"
+                    alt="Фото товара - Корзинка для белья"
+                  />
+                </picture>
               </a>
               <div class="product__content">
                 <a href="product.html" class="product__link-title">
@@ -94,11 +104,15 @@
             </li>
             <li class="product products__item">
               <a href="product.html" class="product__link-img">
-                <img
-                  src="img/photo-toys-mobile@1x.jpg"
-                  alt="Фото товара - большая корзинка для игрушек"
-                  class="product__image"
-                />
+                <picture class="product__image">
+                  <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg" />
+                  <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg" />
+                  <img
+                    src="img/photo-toys-mobile@1x.jpg"
+                    alt="Фото товара - Большая корзинка для игрушек"
+                    class="product__image"
+                  />
+                </picture>
               </a>
               <div class="product__content">
                 <a href="product.html" class="product__link-title">
@@ -120,11 +134,15 @@
               <h2 class="production__title">Процесс производства</h2>
             </div>
             <div class="production__video">
-              <img
-                src="img/video-mobile@1x.jpg"
-                alt="Видео - процесс производства"
-                class="production__image"
-              />
+              <picture class="production__image">
+                <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg" />
+                <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg" />
+                <img
+                  src="img/video-mobile@1x.jpg"
+                  class="production__image"
+                  alt="Видео - процесс производства"
+                />
+              </picture>
               <button class="production__play-btn">Смотреть видео</button>
             </div>
             <p class="production__description">
@@ -199,16 +217,17 @@
             Разработано
           </p>
           <a href="https://htmlacademy.ru/intensive/adaptive" class="site-footer__copyright-link">
-            <img
+            <!-- <img
               class="site-footer__copyright-logo"
               width="27"
               height="34"
               src="img/htmlacademy.svg"
               alt="HTML Academy - HTML и CSS, уровень 2"
-            />
+            /> -->
           </a>
         </div>
       </div>
     </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>

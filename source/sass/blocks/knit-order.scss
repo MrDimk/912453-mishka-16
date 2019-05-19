@@ -2,19 +2,19 @@
   &__text {
     @include font($regular, 13px, 24px, $gray);
     margin: 0;
-    padding: 30px 0;
+    padding: 20px 0 25px;
   }
 
   &__fieldset {
     position: relative;
-    margin: 0 0 15px 0;
+    margin: 0 0 10px 0;
     padding: 0;
     border: none;
     border-top: 1px solid $blue;
 
-    &:last-of-type {
-      margin-bottom: 0;
-    }
+    // &:last-of-type {
+    //   margin-bottom: 0;
+    // }
   }
 
   &__fields-legend {
@@ -28,7 +28,7 @@
   &__fields-list {
     list-style: none;
     margin: 0;
-    padding: 10px 0;
+    padding: 15px 0;
   }
 
   &__fields-item {
