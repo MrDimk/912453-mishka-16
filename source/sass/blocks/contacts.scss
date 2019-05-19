@@ -158,12 +158,6 @@
       padding: 20px 50px 60px;
     }
 
-    &__title {
-      font-size: 53px;
-      line-height: 57px;
-      margin-bottom: 30px;
-    }
-
     &__email {
       width: 350px;
       padding-left: 125px;
@@ -185,6 +179,9 @@
       flex-direction: row-reverse;
       justify-content: flex-end;
       padding-left: 14px;
+      font-size: 53px;
+      line-height: 57px;
+      margin-bottom: 30px;
 
       &::after {
         margin: 0 64px 0 0;
