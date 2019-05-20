@@ -129,12 +129,9 @@
         </section>
         <section class="site-page__production production">
           <div class="production__border">
-            <div class="production__top">
-              <span class="production__video-icon"></span>
-              <h2 class="production__title">Процесс производства</h2>
-            </div>
+
             <div class="production__video">
-              <picture class="production__image">
+              <picture>
                 <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg" />
                 <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg" />
                 <img
@@ -145,11 +142,19 @@
               </picture>
               <button class="production__play-btn">Смотреть видео</button>
             </div>
-            <p class="production__description">
-              По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
-              появляются наши товары.
-            </p>
-            <button class="production__purchase-btn button">Сделать заказ</button>
+
+            <div class="production__content">
+              <div class="production__top">
+                <span class="production__video-icon"></span>
+                <h2 class="production__title">Процесс производства</h2>
+              </div>
+
+              <p class="production__description">
+                По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
+                появляются наши товары.
+              </p>
+              <button class="production__purchase-btn button">Сделать заказ</button>
+            </div>
           </div>
         </section>
         <section class="site-page__purchase-popup purchase-popup modal modal--closed">

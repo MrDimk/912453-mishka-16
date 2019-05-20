@@ -1,4 +1,5 @@
 .product {
+  position: relative;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -15,7 +16,6 @@
 .product__image {
   margin: 0;
   padding: 0;
-  min-width: 334px;
   width: 100%;
   height: auto;
 }
@@ -97,6 +97,7 @@
   }
 
   .product__image {
+    min-width: 334px;
     width: 100%;
   }
 
