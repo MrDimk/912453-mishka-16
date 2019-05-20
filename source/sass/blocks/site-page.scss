@@ -2,81 +2,77 @@
   position: relative;
   margin: 0;
   padding: 0;
+}
 
-  &__title {
-    margin: 0;
-  }
+.site-page__title {
+  margin: 0;
+}
 
-  &__zig-zag-fill {
-    display: none;
-  }
+.site-page__zig-zag-fill {
+  display: none;
+}
 
-  &__products {
-    margin: 30px 0 0;
-    width: 100%;
-  }
+.site-page__products {
+  margin: 30px 0 0;
+  width: 100%;
+}
 
-  &__production {
-    margin: 0 0 58px 0;
-  }
+.site-page__production {
+  margin: 0 0 58px 0;
+}
 
-  //////// form.html
-  &__knit-order {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
+//////// form.html
+.site-page__knit-order {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 /////////////////////////////////////////////////
 
 @media (min-width: $tablet-width) {
-  .site-page {
-    &__title {
-      padding: 105px 0 80px;
-      width: 100vw;
-      top: 0;
-      left: 0;
-    }
+  .site-page__title {
+    padding: 105px 0 80px;
+    width: 100vw;
+    top: 0;
+    left: 0;
+  }
 
-    &__zig-zag-fill {
-      display: block;
-      margin: 0;
-      position: absolute;
-      left: 0;
-      height: 24px;
-      width: 100vw;
-      transform: translateY(-95%);
-    }
+  .site-page__zig-zag-fill {
+    display: block;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    height: 24px;
+    width: 100vw;
+    transform: translateY(-95%);
+  }
 
-    &__products {
-      margin: 45px 0 0;
-    }
+  .site-page__products {
+    margin: 45px 0 0;
+  }
 
-    &__production {
-      margin: 0 0 63px;
-      width: 100%;
-    }
+  .site-page__production {
+    margin: 0 0 63px;
+    width: 100%;
   }
 }
 
 /////////////////////////////////////////////////
 
 @media (min-width: $desktop-width) {
-  .site-page {
-    &__products {
-      max-width: 1050px;
-      margin: 75px auto 5px;
-    }
+  .site-page__products {
+    max-width: 1050px;
+    margin: 75px auto 5px;
+  }
 
-    &__zig-zag-fill {
-      height: 34px;
-    }
+  .site-page__zig-zag-fill {
+    height: 34px;
+  }
 
-    &__production {
-      max-width: 1050px;
-      margin: 0 auto 105px;
-    }
+  .site-page__production {
+    max-width: 1050px;
+    margin: 0 auto 105px;
   }
 }
 ///////////////////////////////////////////////// The end

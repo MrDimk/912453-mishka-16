@@ -4,31 +4,27 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+}
 
-  &__container {
-    padding: 0 30px;
-  }
+.main-page__container {
+  padding: 0 30px;
+}
 
-  &__zig-zag-fill {
-    display: none;
-  }
+.main-page__top-product {
+  margin-bottom: 18px;
+}
 
-  &__top-product {
-    margin-bottom: 18px;
-  }
+.main-page__line {
+  position: relative;
+  left: -5%;
+  right: -5%;
+  width: 110%;
+  height: 8px;
+  margin: 0;
+}
 
-  &__line {
-    position: relative;
-    left: -5%;
-    right: -5%;
-    width: 110%;
-    height: 8px;
-    margin: 0;
-  }
-
-  &__contacts {
-    margin-top: 38px;
-  }
+.main-page__contacts {
+  margin-top: 38px;
 }
 
 /////////////////////////////////////////////////
@@ -36,39 +32,32 @@
 @media (min-width: $tablet-width) {
   .main-page {
     margin-bottom: 35px;
+  }
 
-    &__zig-zag-fill {
-      display: block;
-      height: 24px;
-      width: 100vw;
-      transform: translateY(-95%);
-    }
+  .main-page__line {
+    display: block;
+    height: 20px;
+    left: 0;
+    margin: 0;
+  }
 
-    &__line {
-      display: block;
-      height: 20px;
-      left: 0;
-      margin: 0;
-    }
+  .main-page__top-product {
+    box-sizing: border-box;
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 50px;
+  }
 
-    &__top-product {
-      box-sizing: border-box;
-      margin-top: 0;
-      padding: 0;
-      margin-bottom: 50px;
-    }
+  .main-page__about {
+    margin: 40px 0 35px;
+  }
 
-    &__about {
-      margin: 40px 0 35px;
-    }
+  .main-page__reviews {
+    margin: 35px 0 75px;
+  }
 
-    &__reviews {
-      margin: 35px 0 75px;
-    }
-
-    &__contacts {
-      margin-top: 8px;
-    }
+  .main-page__contacts {
+    margin-top: 8px;
   }
 }
 
@@ -77,33 +66,29 @@
 @media (min-width: $desktop-width) {
   .main-page {
     padding-bottom: 20px;
+  }
 
-    &__zig-zag-fill {
-      height: 34px;
-    }
+  .main-page__top-product {
+    margin-top: 20px;
+  }
 
-    &__top-product {
-      margin-top: 20px;
-    }
+  .main-page__line {
+    height: 23px;
+    width: 1050px;
+    margin: 0 auto 0;
+  }
 
-    &__line {
-      height: 23px;
-      width: 1050px;
-      margin: 0 auto 0;
-    }
+  .main-page__about {
+    margin-top: 55px;
+  }
 
-    &__about {
-      margin-top: 55px;
-    }
+  .main-page__reviews {
+    box-sizing: border-box;
+    margin: 44px 0 125px;
+  }
 
-    &__reviews {
-      box-sizing: border-box;
-      margin: 44px 0 125px;
-    }
-
-    &__contacts {
-      margin-top: 72px;
-    }
+  .main-page__contacts {
+    margin-top: 72px;
   }
 }
 

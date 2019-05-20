@@ -1,80 +1,80 @@
 .reviews {
   padding-bottom: 40px;
+}
 
-  &__title {
-    @include font($bold, 25px, 30px, $black);
-    margin: 0;
-    padding: 4px 0;
+.reviews__title {
+  @include font($bold, 25px, 30px, $black);
+  margin: 0;
+  padding: 4px 0;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__item {
+  margin: 0 0 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reviews__item-text {
+  @include font($regular, 15px, 30px, $gray);
+  margin: 0;
+  padding: 20px 0;
+}
+
+.reviews__item-author {
+  @include font($bold, 17px, 24px, $black);
+  margin: 0;
+  padding: 10px 0;
+}
+
+.reviews__item-author-nick {
+  @include font($regular, 17px, 24px, $gray);
+  display: block;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.reviews__controls {
+  width: 100%;
+  display: flex;
+  margin-bottom: 37px;
+}
+
+.reviews__btn {
+  font-size: 0;
+  flex-shrink: 1;
+  width: 50%;
+  height: 50px;
+  border: 1px solid $light-gray;
+  background-color: $white;
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: none;
+
+  &--prev {
+    background-image: url("../img/icon-left-arrow.svg");
   }
 
-  &__list {
-    margin: 0;
-    padding: 0;
+  &--next {
+    background-image: url("../img/icon-right-arrow.svg");
   }
 
-  &__item {
-    margin: 0 0 20px 0;
-    padding: 0;
-    list-style: none;
+  &:hover {
+    opacity: 0.6;
   }
 
-  &__item-text {
-    @include font($regular, 15px, 30px, $gray);
-    margin: 0;
-    padding: 20px 0;
+  &:active {
+    opacity: 0.3;
   }
+}
 
-  &__item-author {
-    @include font($bold, 17px, 24px, $black);
-    margin: 0;
-    padding: 10px 0;
-  }
-
-  &__item-author-nick {
-    @include font($regular, 17px, 24px, $gray);
-    display: block;
-    margin: 0;
-    padding: 5px 0;
-  }
-
-  &__controls {
-    width: 100%;
-    display: flex;
-    margin-bottom: 37px;
-  }
-
-  &__btn {
-    font-size: 0;
-    flex-shrink: 1;
-    width: 50%;
-    height: 50px;
-    border: 1px solid $light-gray;
-    background-color: $white;
-    background-repeat: no-repeat;
-    background-position: center;
-    outline: none;
-
-    &--prev {
-      background-image: url("../img/icon-left-arrow.svg");
-    }
-
-    &--next {
-      background-image: url("../img/icon-right-arrow.svg");
-    }
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-  }
-
-  &__write-btn {
-    width: 100%;
-    margin: 0;
-  }
+.reviews__write-btn {
+  width: 100%;
+  margin: 0;
 }
 
 /////////////////////////////////////////////////
@@ -90,53 +90,6 @@
     align-items: center;
     flex-wrap: wrap;
 
-    &__title {
-      margin-top: 0;
-      padding: 0;
-      font-size: 43px;
-      line-height: 50px;
-      order: 1;
-    }
-
-    &__write-btn {
-      font-size: 17px;
-      width: 175px;
-      margin: 0;
-      order: 2;
-    }
-
-    &__list {
-      order: 3;
-    }
-
-    &__item {
-      margin: 0;
-    }
-
-    &__item-text {
-      font-size: 17px;
-      line-height: 30px;
-      padding: 45px 0 30px 0;
-      align-self: stretch;
-    }
-
-    &__item-author {
-      margin-top: 20px;
-      order: 4;
-    }
-
-    &__controls {
-      margin: 0 0 0 auto;
-      width: 175px;
-      order: 5;
-      transform: translateY(-53px);
-    }
-
-    &__btn {
-      border: none;
-      height: 26px;
-    }
-
     &::before {
       content: "";
       display: block;
@@ -151,6 +104,53 @@
       z-index: -2;
     }
   }
+
+  .reviews__title {
+    margin-top: 0;
+    padding: 0;
+    font-size: 43px;
+    line-height: 50px;
+    order: 1;
+  }
+
+  .reviews__write-btn {
+    font-size: 17px;
+    width: 175px;
+    margin: 0;
+    order: 2;
+  }
+
+  .reviews__list {
+    order: 3;
+  }
+
+  .reviews__item {
+    margin: 0;
+  }
+
+  .reviews__item-text {
+    font-size: 17px;
+    line-height: 30px;
+    padding: 45px 0 30px 0;
+    align-self: stretch;
+  }
+
+  .reviews__item-author {
+    margin-top: 20px;
+    order: 4;
+  }
+
+  .reviews__controls {
+    margin: 0 0 0 auto;
+    width: 175px;
+    order: 5;
+    transform: translateY(-53px);
+  }
+
+  .reviews__btn {
+    border: none;
+    height: 26px;
+  }
 }
 
 /////////////////////////////////////////////////
@@ -163,24 +163,24 @@
       left: 50px;
       min-height: 457px;
     }
+  }
 
-    &__title {
-      font-size: 53px;
-      line-height: 57px;
-    }
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 
-    &__write-btn {
-      margin: 8px 0 0;
-    }
+  .reviews__write-btn {
+    margin: 8px 0 0;
+  }
 
-    &__item-text {
-      padding-right: 105px;
-    }
+  .reviews__item-text {
+    padding-right: 105px;
+  }
 
-    &__item-author {
-      margin-top: 0;
-      order: 4;
-    }
+  .reviews__item-author {
+    margin-top: 0;
+    order: 4;
   }
 }
 

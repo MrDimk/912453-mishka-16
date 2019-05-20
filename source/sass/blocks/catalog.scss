@@ -1,73 +1,73 @@
 .catalog {
   padding: 0;
   width: 100%;
+}
 
-  &__link {
-    display: flex;
-    justify-content: space-between;
+.catalog__link {
+  display: flex;
+  justify-content: space-between;
 
-    box-sizing: border-box;
-    padding: 0 30px;
-    width: 100%;
-    min-height: 103px;
+  box-sizing: border-box;
+  padding: 0 30px;
+  width: 100%;
+  min-height: 103px;
 
-    @include font($bold, 19px, 24px, $white);
-    text-decoration: none;
+  @include font($bold, 19px, 24px, $white);
+  text-decoration: none;
 
-    &--interior {
-      background-color: $blue;
+  &--interior {
+    background-color: $blue;
 
-      &:hover {
-        background-color: $blue-hover;
-      }
-
-      &:active {
-        background-color: $blue-hover;
-
-        & * {
-          opacity: 0.3;
-        }
-      }
+    &:hover {
+      background-color: $blue-hover;
     }
 
-    &--toys {
-      background-color: $dark-blue;
+    &:active {
+      background-color: $blue-hover;
 
-      &:hover {
-        background-color: $dark-blue-hover;
-      }
-
-      &:active {
-        background-color: $dark-blue-hover;
-
-        & * {
-          opacity: 0.3;
-        }
+      & * {
+        opacity: 0.3;
       }
     }
   }
 
-  &__text {
-    padding: 24px 30px 24px 0;
-    margin: 0;
+  &--toys {
+    background-color: $dark-blue;
+
+    &:hover {
+      background-color: $dark-blue-hover;
+    }
+
+    &:active {
+      background-color: $dark-blue-hover;
+
+      & * {
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+.catalog__text {
+  padding: 24px 30px 24px 0;
+  margin: 0;
+}
+
+.catalog__icon {
+  align-self: center;
+  padding: 0;
+  opacity: 0.5;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--interior {
+    background-image: url("../img/icon-interior.svg");
   }
 
-  &__icon {
-    align-self: center;
-    padding: 0;
-    opacity: 0.5;
-    width: 60px;
-    height: 60px;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    &--interior {
-      background-image: url("../img/icon-interior.svg");
-    }
-
-    &--toys {
-      background-image: url("../img/icon-toy.svg");
-    }
+  &--toys {
+    background-image: url("../img/icon-toy.svg");
   }
 }
 
@@ -78,21 +78,21 @@
     padding: 0 50px;
     display: flex;
     justify-content: center;
+  }
 
-    &__link {
-      min-height: 119px;
-      font-size: 20px;
-      line-height: 30px;
-    }
+  .catalog__link {
+    min-height: 119px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 
-    &__text {
-      padding: 30px 35px 25px 5px;
-    }
+  .catalog__text {
+    padding: 30px 35px 25px 5px;
+  }
 
-    &__icon {
-      &--toys {
-        margin-right: 6px;
-      }
+  .catalog__icon {
+    &--toys {
+      margin-right: 6px;
     }
   }
 }
