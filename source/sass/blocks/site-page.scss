@@ -2,6 +2,7 @@
   position: relative;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .site-page__title {
@@ -18,12 +19,14 @@
 }
 
 .site-page__production {
-  margin: 0 0 58px 0;
+  margin: 0 auto 58px;
+  width: 100%;
+  max-width: 350px;
 }
 
 //////// form.html
 .site-page__knit-order {
-  margin: 0;
+  margin: 0 0 26px 0;
   padding: 0;
   width: 100%;
 }
@@ -38,23 +41,18 @@
     left: 0;
   }
 
-  .site-page__zig-zag-fill {
-    display: block;
-    margin: 0;
-    position: absolute;
-    left: 0;
-    height: 24px;
-    width: 100vw;
-    transform: translateY(-95%);
-  }
-
   .site-page__products {
-    margin: 45px 0 0;
+    margin: 69px 0 0;
   }
 
   .site-page__production {
-    margin: 0 0 63px;
-    width: 100%;
+    margin: 0 auto 63px;
+    max-width: 668px;
+  }
+
+  //////// form.html
+  .site-page__knit-order {
+    margin: 0 0 32px 0;
   }
 }
 
@@ -63,16 +61,12 @@
 @media (min-width: $desktop-width) {
   .site-page__products {
     max-width: 1050px;
-    margin: 75px auto 5px;
-  }
-
-  .site-page__zig-zag-fill {
-    height: 34px;
+    margin: 110px auto 5px;
   }
 
   .site-page__production {
     max-width: 1050px;
-    margin: 0 auto 105px;
+    margin: 50px auto 105px;
   }
 }
 ///////////////////////////////////////////////// The end

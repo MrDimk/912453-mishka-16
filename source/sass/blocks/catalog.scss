@@ -78,12 +78,19 @@
     padding: 0 50px;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
   }
 
   .catalog__link {
     min-height: 119px;
     font-size: 20px;
     line-height: 30px;
+    margin-top: 5px;
+
+    &:hover {
+      min-height: 124px;
+      margin-top: 0;
+    }
   }
 
   .catalog__text {

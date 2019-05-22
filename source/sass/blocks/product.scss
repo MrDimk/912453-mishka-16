@@ -131,6 +131,26 @@
 @media (min-width: $desktop-width) {
   .product {
     flex-direction: column;
+
+    &:hover {
+      & .product__content {
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      & .product__title {
+        opacity: 0.6;
+      }
+    }
+
+    &:active .product__content {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .product__link-img {
+    &:active ~ .product__content {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
   }
 
   .product__image {

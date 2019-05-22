@@ -54,7 +54,6 @@
       <h1 class="site-page__title page-title">
         Вязание на заказ
       </h1>
-      <div class="site-page__zig-zag-fill zig-zag zig-zag--fill"></div>
       <section class="site-page__knit-order knit-order">
         <h2 class="knit-order__title visually-hidden">Форма заказа</h2>
         <div class="container">
@@ -66,7 +65,7 @@
         <form action="https://echo.htmlacademy.ru" method="POST" class="knit-order__form">
           <div class="container">
             <fieldset class="knit-order__fieldset knit-order__fieldset--type">
-              <legend class="knit-order__fields-legend">Тип</legend>
+              <legend class="knit-order__fields-legend knit-order__fields-legend--type">Тип</legend>
               <ul class="knit-order__fields-list knit-order__fields-list--type">
                 <li class="knit-order__fields-item">
                   <input
@@ -96,7 +95,7 @@
           </div>
           <div class="container container--fill">
             <fieldset class="knit-order__fieldset knit-order__fieldset--color">
-              <legend class="knit-order__fields-legend">Цвет</legend>
+              <legend class="knit-order__fields-legend knit-order__fields-legend--color">Цвет</legend>
               <ul class="knit-order__fields-list knit-order__fields-list--color">
                 <li class="knit-order__fields-item">
                   <input
@@ -163,7 +162,7 @@
           </div>
           <div class="container">
             <fieldset class="knit-order__fieldset knit-order__fieldset--name">
-              <legend class="knit-order__fields-legend">ФИО</legend>
+              <legend class="knit-order__fields-legend knit-order__fields-legend--name">ФИО</legend>
               <ul class="knit-order__fields-list knit-order__fields-list--name">
                 <li class="knit-order__fields-item">
                   <label for="name-id" class="knit-order__text-label">Имя:</label>
@@ -200,14 +199,14 @@
           </div>
           <div class="container container--fill">
             <fieldset class="knit-order__fieldset knit-order__fieldset--phone">
-              <legend class="knit-order__fields-legend">тел</legend>
+              <legend class="knit-order__fields-legend knit-order__fields-legend--phone">тел</legend>
               <ul class="knit-order__fields-list knit-order__fields-list--phone">
                 <li class="knit-order__fields-item">
                   <label for="phone-id" class="knit-order__text-label knit-order__text-label--phone"
                     >Телефон:</label
                   >
                   <input
-                    type="text"
+                    type="tel"
                     class="knit-order__text-input knit-order__text-input--phone"
                     id="phone-id"
                     name="phone"
@@ -217,14 +216,14 @@
               </ul>
             </fieldset>
             <fieldset class="knit-order__fieldset knit-order__fieldset--email">
-              <legend class="knit-order__fields-legend">e-mail</legend>
+              <legend class="knit-order__fields-legend knit-order__fields-legend--email">e-mail</legend>
               <ul class="knit-order__fields-list knit-order__fields-list--email">
                 <li class="knit-order__fields-item">
                   <label for="email-id" class="knit-order__text-label knit-order__text-label--email"
                     >E-mail:</label
                   >
                   <input
-                    type="text"
+                    type="email"
                     class="knit-order__text-input knit-order__text-input--email"
                     id="email-id"
                     name="email"
@@ -235,8 +234,8 @@
             </fieldset>
           </div>
           <div class="container">
-            <fieldset class="knit-order__fieldset">
-              <legend class="knit-order__fields-legend">Доп</legend>
+            <fieldset class="knit-order__fieldset knit-order__fieldset--additionally">
+              <legend class="knit-order__fields-legend knit-order__fields-legend--additionally">Доп</legend>
               <ul class="knit-order__fields-list knit-order__fields-list--additionally">
                 <li class="knit-order__fields-item">
                   <label for="additionally-id" class="knit-order__textarea-label visually-hidden">
@@ -277,10 +276,10 @@
           </li>
         </ul>
         <div class="site-footer__bottom">
-          <p class="site-footer__copyright">
-            Разработано
-          </p>
           <a href="https://htmlacademy.ru/intensive/adaptive" class="site-footer__copyright-link">
+            <p class="site-footer__copyright">
+              Разработано
+            </p>
             <img
               class="site-footer__copyright-logo"
               width="27"

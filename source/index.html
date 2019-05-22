@@ -92,10 +92,10 @@
               </tr>
             </table>
           </div>
-          <picture class="top-product__image">
+          <picture class="top-product__picture">
             <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg" />
             <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg" />
-            <img src="img/triple-set-mobile@1x.jpg" alt="Фото вязанных корзинок" />
+            <img class="top-product__image" src="img/triple-set-mobile@1x.jpg" alt="Фото вязанных корзинок" />
           </picture>
           <div class="top-product__purchase">
             <p class="top-product__price">Цена: 990 руб.</p>
@@ -154,7 +154,7 @@
             <button class="reviews__btn reviews__btn--prev">Назад</button>
             <button class="reviews__btn reviews__btn--next">Вперед</button>
           </div>
-          <button class="reviews__write-btn button">Написать</button>
+          <a href="reviews.html" class="reviews__write-btn button">Написать</a>
         </section>
       </div>
       <div class="main-page__line zig-zag zig-zag--line"></div>
@@ -186,7 +186,7 @@
           </iframe>
         </div>
         <p class="contacts__bottom">
-          <button class="contacts__feedback-btn button">Напишите нам</button>
+          <a href="contactus.html" class="contacts__feedback-btn button">Напишите нам</a>
         </p>
       </section>
       <section class="main-page__purchase-popup purchase-popup modal modal--closed">
@@ -251,10 +251,10 @@
           </li>
         </ul>
         <div class="site-footer__bottom">
-          <p class="site-footer__copyright">
-            Разработано
-          </p>
           <a href="https://htmlacademy.ru/intensive/adaptive" class="site-footer__copyright-link">
+            <p class="site-footer__copyright">
+              Разработано
+            </p>
             <img
               class="site-footer__copyright-logo"
               width="27"

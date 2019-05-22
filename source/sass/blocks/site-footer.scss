@@ -43,11 +43,13 @@
 }
 
 .site-footer__copyright-link {
-  display: block;
-  margin: 0;
-  padding: 0;
-  width: 27px;
-  height: 34px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 /////////////////////////////////////////////////

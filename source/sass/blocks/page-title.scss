@@ -9,9 +9,23 @@
 
 @media (min-width: $tablet-width) {
   .page-title {
+    position: relative;
     padding: 55px 0 90px;
     font-size: 43px;
     line-height: 50px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      width: 101vw;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: contain;
+      background-position-x: center;
+    }
   }
 }
 
@@ -23,6 +37,10 @@
     font-size: 53px;
     line-height: 57px;
     padding: 53px 0 120px;
+
+    &::after {
+      height: 34px;
+    }
   }
 }
 

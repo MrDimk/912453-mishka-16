@@ -52,7 +52,7 @@
     </header>
     <main class="site-page">
       <h1 class="site-page__title page-title">Каталог товаров</h1>
-      <div class="site-page__zig-zag-fill zig-zag zig-zag--fill"></div>
+      <!-- <div class="site-page__zig-zag-fill zig-zag zig-zag--fill"></div> -->
       <div class="container">
         <section class="site-page__products products">
           <ul class="products__list">
@@ -128,33 +128,28 @@
           </ul>
         </section>
         <section class="site-page__production production">
-          <div class="production__border">
-
-            <div class="production__video">
-              <picture>
-                <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg" />
-                <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg" />
-                <img
-                  src="img/video-mobile@1x.jpg"
-                  class="production__image"
-                  alt="Видео - процесс производства"
-                />
-              </picture>
-              <button class="production__play-btn">Смотреть видео</button>
+          <div class="production__video">
+            <picture class="production__picture">
+              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg" />
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg" />
+              <img
+                src="img/video-mobile@1x.jpg"
+                class="production__image"
+                alt="Видео - процесс производства"
+              />
+            </picture>
+            <button class="production__play-btn">Смотреть видео</button>
+          </div>
+          <div class="production__content">
+            <div class="production__top">
+              <span class="production__video-icon"></span>
+              <h2 class="production__title">Процесс производства</h2>
             </div>
-
-            <div class="production__content">
-              <div class="production__top">
-                <span class="production__video-icon"></span>
-                <h2 class="production__title">Процесс производства</h2>
-              </div>
-
-              <p class="production__description">
-                По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
-                появляются наши товары.
-              </p>
-              <button class="production__purchase-btn button">Сделать заказ</button>
-            </div>
+            <p class="production__description">
+              По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
+              появляются наши товары.
+            </p>
+            <button class="production__purchase-btn button">Сделать заказ</button>
           </div>
         </section>
         <section class="site-page__purchase-popup purchase-popup modal modal--closed">
@@ -218,10 +213,8 @@
           </li>
         </ul>
         <div class="site-footer__bottom">
-          <p class="site-footer__copyright">
-            Разработано
-          </p>
           <a href="https://htmlacademy.ru/intensive/adaptive" class="site-footer__copyright-link">
+            <p class="site-footer__copyright">Разработано</p>
             <img
               class="site-footer__copyright-logo"
               width="27"
