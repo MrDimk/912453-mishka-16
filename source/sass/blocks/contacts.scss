@@ -92,7 +92,7 @@
   }
 
   .contacts__title {
-    margin: 40px 2px 24px 0;
+    margin: 40px 2px 28px 0;
     width: 100%;
     font-size: 43px;
     line-height: 50px;
@@ -182,16 +182,18 @@
     padding-left: 14px;
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 30px;
+    margin-top: 37px;
+    margin-bottom: 28px;
 
     &::after {
-      margin: 0 64px 0 0;
+      margin: 5px 60px 0 0;
     }
   }
 
   .contacts__bottom {
     position: absolute;
     bottom: 3px;
+    left: 50px;
     padding: 0 0 0 175px;
   }
 

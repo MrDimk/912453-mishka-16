@@ -1,16 +1,17 @@
 .production {
+  box-sizing: border-box;
   position: relative;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid $light-gray;
 }
 
 .production__video {
-  position: absolute;
-  margin: 93px auto 0;
+  position: relative;
   width: 100%;
-  max-width: 260px;
+  margin: 0 auto;
 }
 
 .production__image {
@@ -34,68 +35,52 @@
   font-size: 0;
 }
 
-.production__video-icon {
-  margin: 0 0 0 33px;
-  padding: 5px;
-  display: block;
-  width: 32px;
-  height: 22px;
-
-  background-image: url("../img/icon-video.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.production__top {
-  box-sizing: border-box;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 22px 0 0;
-  margin-bottom: 175px;
-}
-
 .production__title {
   @include font($bold, 17px, 24px, $black);
-
+  display: flex;
+  align-items: center;
   margin: 0;
-  padding: 0 20px 0 22px;
+  padding: 0 35px 25px 33px;
+
+  &::before {
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    width: 32px;
+    height: 22px;
+    margin: 0 23px 0 0;
+    background-image: url("../img/video.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .production__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  box-sizing: border-box;
   width: 100%;
-  border: 1px solid $light-gray;
+  padding: 20px 0 30px;
 }
 
 .production__description {
   @include font($regular, 13px, 24px, $gray);
   margin: 0;
   padding: 26px 42px 26px 32px;
+  max-width: 100%;
 }
 
 .production__purchase-btn {
   font-size: 17px;
   width: calc(100% - 68px);
-  margin: 0 0 30px 0;
+  margin: 0 auto;
 }
 
 /////////////////////////////////////////////////
 
 @media (min-width: $tablet-width) {
-  .production {
-    &:hover .production__content {
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    &:active .production__content {
-      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-    }
+  .production__content {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
   }
 
   .production__video {
@@ -106,21 +91,14 @@
     order: -1;
   }
 
-  .production__top {
-    position: relative;
-    width: auto;
-    margin-bottom: 0;
-    padding: 32px 35px 28px;
-    align-self: flex-start;
-  }
-
-  .production__video-icon {
-    margin: 0;
-  }
-
   .production__title {
     font-size: 20px;
-    padding: 0 20px 0 27px;
+    margin: 36px 40px 32px;
+    padding: 0;
+
+    &::before {
+      margin-right: 32px;
+    }
   }
 
   .production__description {
@@ -131,7 +109,7 @@
 
   .production__purchase-btn {
     width: calc(100% - 80px);
-    margin: 0 0 45px;
+    margin: 0 auto 45px;
   }
 }
 
@@ -143,48 +121,54 @@
     justify-content: space-between;
     align-items: stretch;
     min-height: 455px;
-  }
 
-  .production__border {
-    box-sizing: border-box;
-    flex-direction: row;
-    align-items: stretch;
-    margin: 0;
-    padding: 0;
-    right: 0;
-    flex-wrap: wrap;
+    &:hover {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
   }
 
   .production__video {
+    position: absolute;
+    top: 0;
     left: 0;
     height: 100%;
-    width: 100%;
+    width: 682px;
     max-width: 684px;
     margin: 0;
     padding: 0;
   }
 
-  .production__video-icon {
-    margin: 44px 0 0;
-    padding: 5px;
+  .production__play-btn {
+    &:hover {
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    &:active {
+      transform: translate(-50%, -50%) scale(0.8);
+      opacity: 0.3;
+    }
   }
 
   .production__content {
     box-sizing: border-box;
     width: 365px;
-    padding: 0 55px 0 75px;
-  }
-
-  .production__top {
-    padding: 0;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    height: 100%;
+    margin: 0 0 0 auto;
+    padding: 48px 55px 0 77px;
   }
 
   .production__title {
-    margin-top: 20px;
+    display: block;
+    margin: 0;
     padding: 0;
+
+    &::before {
+      margin-bottom: 25px;
+    }
   }
 
   .production__description {
@@ -198,4 +182,5 @@
     width: 100%;
   }
 }
-//End
+
+/////////////////////////////////////////End

@@ -25,6 +25,17 @@
     background-color: $gray;
     color: rgba(255, 255, 255, 0.3);
   }
+
+  &--blue {
+    background-color: $blue;
+    border-color: $blue;
+    color: white;
+
+    &:hover,
+    &:focus {
+      background-color: $blue-hover;
+    }
+  }
 }
 
 //End

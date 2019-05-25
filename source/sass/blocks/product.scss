@@ -38,6 +38,7 @@
 .product__link-title {
   text-decoration: none;
   align-self: flex-start;
+  max-width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -86,6 +87,10 @@
   .product {
     flex-direction: row;
     justify-content: center;
+  }
+
+  .product__link-title {
+    max-width: 100%;
   }
 
   .product__title {
@@ -148,6 +153,8 @@
   }
 
   .product__link-img {
+    height: 466px;
+
     &:active ~ .product__content {
       box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     }
@@ -158,14 +165,19 @@
   }
 
   .product__content {
-    min-height: 197px;
+    min-height: 198px;
     padding: 26px 30px 26px 26px;
+  }
+
+  .product__properties {
+    padding: 5px 0 0;
   }
 
   .product__bottom {
     align-self: flex-start;
-    margin: auto 0 0;
-    padding: 20px 0 0;
+    position: relative;
+    margin: auto 0 2px;
+    padding: 22px 0 0;
   }
 
   .product__price {

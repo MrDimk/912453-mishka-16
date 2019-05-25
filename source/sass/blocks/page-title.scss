@@ -10,7 +10,7 @@
 @media (min-width: $tablet-width) {
   .page-title {
     position: relative;
-    padding: 55px 0 90px;
+    padding: 50px 0 95px;
     font-size: 43px;
     line-height: 50px;
 
@@ -18,12 +18,12 @@
       content: "";
       display: block;
       position: absolute;
-      bottom: -3px;
-      width: 101vw;
+      bottom: -2px;
+      width: 200vw;
       height: 24px;
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
-      background-size: contain;
+      background-size: 770px 24px;
       background-position-x: center;
     }
   }
@@ -36,10 +36,13 @@
   .page-title {
     font-size: 53px;
     line-height: 57px;
-    padding: 53px 0 120px;
+    padding: 50px 0 123px;
 
     &::after {
       height: 34px;
+      background-size: 1150px 34px;
+      background-position-x: 0;
+      bottom: -1;
     }
   }
 }

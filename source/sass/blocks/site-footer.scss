@@ -70,10 +70,25 @@
     font-size: 0;
     width: 102px;
     height: 34px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-image: url("../img/logo-footer.svg");
-    transform: translate(0, -3px);
+    // background-size: 100%;
+    // background-repeat: no-repeat;
+    // background-image: url("../img/logo-footer.svg");
+    // transform: translate(0, -3px);
+
+    & .site-footer__logo-icon {
+      width: 102px;
+      height: 34px;
+    }
+
+    &:hover .site-footer__logo-icon,
+    &:focus .site-footer__logo-icon {
+      fill: $dark-blue-hover;
+    }
+
+    &:active .site-footer__logo-icon {
+      fill: $dark-blue-hover;
+      opacity: 0.3;
+    }
   }
 
   .site-footer__social {

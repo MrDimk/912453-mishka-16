@@ -46,10 +46,26 @@
   }
 }
 
+.purchase-popup__size-input {
+  & + .purchase-popup__size-code {
+    display: block;
+    box-sizing: border-box;
+    width: 82px;
+    height: 52px;
+    border: 2px solid $light-gray;
+
+    @include font($bold, 17px, 16px, $gray);
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  &:checked + .purchase-popup__size-code {
+    border: 2px solid $blue;
+  }
+}
+
 .purchase-popup__submit-btn {
   width: 100%;
-  background-color: $blue;
-  border-color: $blue;
 }
 
 /////////////////////////////////////////////////

@@ -16,9 +16,6 @@
 
 .main-page__line {
   position: relative;
-  left: -5%;
-  right: -5%;
-  width: 110%;
   height: 8px;
   margin: 0;
 }
@@ -34,10 +31,15 @@
     margin-bottom: 35px;
   }
 
+  .main-page__baner {
+    min-height: 746px;
+  }
+
   .main-page__line {
     display: block;
-    height: 20px;
+    height: 17px;
     left: 0;
+    width: 100%;
     margin: 0;
   }
 
@@ -45,15 +47,15 @@
     box-sizing: border-box;
     margin-top: 0;
     padding: 0;
-    margin-bottom: 50px;
+    margin-bottom: 47px;
   }
 
   .main-page__about {
-    margin: 40px 0 35px;
+    margin: 42px 0 35px;
   }
 
   .main-page__reviews {
-    margin: 35px 0 75px;
+    margin: 35px 0 77px;
   }
 
   .main-page__contacts {
@@ -69,13 +71,11 @@
   }
 
   .main-page__top-product {
-    margin-top: 20px;
+    margin-top: 50px;
   }
 
   .main-page__line {
-    height: 23px;
-    width: 1050px;
-    margin: 0 auto 0;
+    margin: 0 auto;
   }
 
   .main-page__about {
@@ -84,7 +84,7 @@
 
   .main-page__reviews {
     box-sizing: border-box;
-    margin: 44px 0 125px;
+    margin: 43px 0 125px;
   }
 
   .main-page__contacts {

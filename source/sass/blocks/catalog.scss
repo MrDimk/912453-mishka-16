@@ -1,6 +1,5 @@
 .catalog {
   padding: 0;
-  width: 100%;
 }
 
 .catalog__link {
@@ -15,8 +14,24 @@
   @include font($bold, 19px, 24px, $white);
   text-decoration: none;
 
+  &::after {
+    content: "";
+    display: block;
+    align-self: center;
+    padding: 0;
+    opacity: 0.5;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   &--interior {
     background-color: $blue;
+
+    &::after {
+      background-image: url("../img/icon-interior.svg");
+    }
 
     &:hover {
       background-color: $blue-hover;
@@ -33,6 +48,10 @@
 
   &--toys {
     background-color: $dark-blue;
+
+    &::after {
+      background-image: url("../img/icon-toy.svg");
+    }
 
     &:hover {
       background-color: $dark-blue-hover;
@@ -51,24 +70,6 @@
 .catalog__text {
   padding: 24px 30px 24px 0;
   margin: 0;
-}
-
-.catalog__icon {
-  align-self: center;
-  padding: 0;
-  opacity: 0.5;
-  width: 60px;
-  height: 60px;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  &--interior {
-    background-image: url("../img/icon-interior.svg");
-  }
-
-  &--toys {
-    background-image: url("../img/icon-toy.svg");
-  }
 }
 
 /////////////////////////////////////////////////
@@ -91,16 +92,14 @@
       min-height: 124px;
       margin-top: 0;
     }
+
+    &--toys::after {
+      margin-right: 6px;
+    }
   }
 
   .catalog__text {
-    padding: 30px 35px 25px 5px;
-  }
-
-  .catalog__icon {
-    &--toys {
-      margin-right: 6px;
-    }
+    padding: 28px 35px 25px 5px;
   }
 }
 
