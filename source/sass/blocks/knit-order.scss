@@ -287,8 +287,6 @@
       padding-top: 0;
     }
 
-    //////////////////////////////////////////////////////////////////
-
     &--phone {
       padding-top: 0;
       padding-bottom: 0;
@@ -300,8 +298,6 @@
       padding-bottom: 0;
       margin-bottom: 0;
     }
-
-    ////////////////////////////////////////////////////////////////////
 
     &--additionally {
       padding-top: 38px;
@@ -314,8 +310,6 @@
     background-color: transparent;
     top: 50px;
 
-////////////////////////////////////////////////////////////////////
-
     &--phone {
       top: 50px;
     }
@@ -323,8 +317,6 @@
     &--email {
       top: 25px;
     }
-
-////////////////////////////////////////////////////////////////////
 
     &--additionally {
       top: 80px;
@@ -363,8 +355,6 @@
       }
     }
 
-    ////////////////////////////////////////////////////////////////////
-
     &--phone {
       padding-top: 30px;
       padding-bottom: 0;
@@ -376,13 +366,9 @@
     }
   }
 
-  ////////////////////////////////////////////////////////////////////
-
   .knit-order__fields-item {
     display: flex;
   }
-
-///////////////////////////////////////////////////////////////////
 
   .knit-order__text-label {
     &--phone {
@@ -400,8 +386,6 @@
     }
   }
 
-  ////////////////////////////////////////////////////////////////////
-
   .knit-order__radio-label {
     font-size: 19px;
     width: auto;
@@ -413,7 +397,6 @@
       margin-right: 30px;
     }
   }
-
 
   .knit-order__radio-input:checked + .knit-order__radio-label::before {
     background-image: radial-gradient($blue 10px, $white 11px);
