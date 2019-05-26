@@ -34,14 +34,20 @@
       background-image: url("../img/icon-interior.svg");
     }
 
-    &:hover {
+    &:hover,
+    &focus {
       background-color: $blue-hover;
+
+      &::after {
+        opacity: 0.7;
+      }
     }
 
     &:active {
       background-color: $blue-hover;
+      color: rgba($white, 0.3);
 
-      & * {
+      &::after {
         opacity: 0.3;
       }
     }
@@ -57,12 +63,17 @@
     &:hover,
     &:focus {
       background-color: $dark-blue-hover;
+
+      &::after {
+        opacity: 0.7;
+      }
     }
 
     &:active {
       background-color: $dark-blue-hover;
+      color: rgba($white, 0.3);
 
-      & * {
+      &::after {
         opacity: 0.3;
       }
     }
