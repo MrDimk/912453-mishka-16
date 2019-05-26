@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>HTML Academy: Мишка</title>
+    <style>
+        html {
+          background-image: url("../previews/mishka-index-mobile.jpg");
+          background-position: center top;
+          background-repeat: no-repeat;
+        }
+
+        @media (min-width: 768px) {
+          html {
+            background-image: url("../previews/mishka-index-tablet.jpg");
+          }
+        }
+
+        @media (min-width: 1150px) {
+          html {
+            background-image: url("../previews/mishka-index-desktop.jpg");
+          }
+        }
+
+        body {
+          opacity: 0.5;
+        }
+
+      </style>
   </head>
   <body>
     <header class="site-header">
@@ -63,7 +87,7 @@
     <main class="main-page">
       <div class="main-page__baner main-baner">
         <h1 class="main-baner__title">
-          Милые штуки ручной работы для дома
+          Милые штуки ручной работы&nbspдля дома
         </h1>
         <div class="main-baner__catalog catalog">
           <a href="catalog.html" class="catalog__link catalog__link--interior">

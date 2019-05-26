@@ -92,16 +92,17 @@
   }
 
   .contacts__title {
-    margin: 40px 2px 28px 0;
+    position: relative;
+    margin: 50px 2px 45px 0;
     width: 100%;
     font-size: 43px;
     line-height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
     &::after {
       content: "";
+      position: absolute;
+      right: 0;
+      top: -15px;
       width: 47px;
       height: 81px;
       background-image: url("../img/icon-flag.svg");
@@ -127,7 +128,7 @@
   }
 
   .contacts__bottom {
-    margin: 55px 0 20px 0;
+    margin: 52px 0 20px 0;
     display: flex;
     justify-content: space-around;
   }
@@ -177,16 +178,15 @@
   }
 
   .contacts__title {
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    padding-left: 14px;
+    padding-left: 120px;
     font-size: 53px;
     line-height: 57px;
-    margin-top: 37px;
-    margin-bottom: 28px;
+    margin-top: 38px;
+    margin-bottom: 43px;
 
     &::after {
       margin: 5px 60px 0 0;
+      left: 12px;
     }
   }
 
