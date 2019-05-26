@@ -137,6 +137,7 @@
 @media (min-width: $desktop-width) {
   .product {
     flex-direction: column;
+    justify-content: stretch;
 
     &:hover {
       & .product__content {
@@ -150,7 +151,7 @@
   }
 
   .product__link-img {
-    height: 466px;
+    height: 462px;
 
     &:active ~ .product__content {
       box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
@@ -162,6 +163,7 @@
   }
 
   .product__content {
+    box-sizing: border-box;
     min-height: 195px;
     padding: 26px 30px 26px 26px;
   }

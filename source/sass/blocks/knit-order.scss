@@ -415,10 +415,7 @@
   }
 
   .knit-order__checkbox-input:checked + .knit-order__checkbox-label::before {
-    background-image: url("../img/icon-tick.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 22px 16px;
+    background-size: 33px 22px;
   }
 
   .knit-order__text-input {
@@ -488,7 +485,7 @@
 
     &--additionally {
       margin-top: 0;
-      padding-top: 20px;
+      padding-top: 17px;
     }
   }
 
@@ -512,7 +509,7 @@
     }
 
     &--additionally {
-      top: 70px;
+      top: 65px;
     }
   }
 
