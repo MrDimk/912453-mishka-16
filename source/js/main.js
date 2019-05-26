@@ -20,13 +20,11 @@ var modal = document.querySelector('.purchase-popup');
 var openModalButtons = document.querySelectorAll('.js-modal');
 const mOpened = 'modal--opened';
 const mClosed = 'modal--closed';
-console.log(modal);
 
 var closeModal = function(e) {
   if(e.target.className.indexOf('purchase-popup') === -1) {
     modal.classList.remove(mOpened);
     modal.classList.add(mClosed);
-    console.log(e.target);
     document.removeEventListener('click', closeModal);
   }
 };
@@ -43,7 +41,6 @@ var openModal = function(evt) {
 }
 
 var keyboardHandler = function(evt) {
-  console.log(evt);
   if (evt.keyCode === 27) {
     evt.preventDefault();
     closeModal(evt);
