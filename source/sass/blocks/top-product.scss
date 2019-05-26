@@ -21,7 +21,7 @@
 .top-product__description {
   @include font($regular, 15px, 24px, $gray);
   margin: 0;
-  padding: 25px 0 15px 0;
+  padding: 20px 0 15px 0;
 }
 
 .top-product__properties {
@@ -49,7 +49,7 @@
 .top-product__price {
   @include font($bold, 17px, 24px, $gray);
   margin: 0 0 5px 0;
-  padding: 20px 0;
+  padding: 16px 0 20px;
   text-align: center;
 }
 

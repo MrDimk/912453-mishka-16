@@ -10,6 +10,7 @@
   padding: 0 30px;
   width: 100%;
   min-height: 103px;
+  outline: none;
 
   @include font($bold, 19px, 24px, $white);
   text-decoration: none;
@@ -53,7 +54,8 @@
       background-image: url("../img/icon-toy.svg");
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $dark-blue-hover;
     }
 
@@ -88,7 +90,8 @@
     line-height: 30px;
     margin-top: 5px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       min-height: 124px;
       margin-top: 0;
     }

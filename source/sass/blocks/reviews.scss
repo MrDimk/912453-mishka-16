@@ -63,8 +63,10 @@
     background-image: url("../img/icon-right-arrow.svg");
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.6;
+    outline: none;
   }
 
   &:active {
