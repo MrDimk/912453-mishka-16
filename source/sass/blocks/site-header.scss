@@ -4,27 +4,25 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 
-  &__main-nav {
-    margin: 0;
-    width: 100%;
-  }
+.site-header__main-nav {
+  margin: 0;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
-  .site-header {
-    &__main-nav {
-      margin: 0;
-    }
+  .site-header__main-nav {
+    margin: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .site-header {
-    &__main-nav {
-      max-width: 1150px;
-      margin: 0 auto;
-    }
+  .site-header__main-nav {
+    max-width: 1150px;
+    margin: 0 auto;
   }
 }
 

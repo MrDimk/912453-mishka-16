@@ -2,16 +2,49 @@
   @include font($bold, 27px, 30px, $black);
   text-align: center;
   background-color: $title-bg;
-  padding: 75px 30px 70px;
+  padding: 70px 30px 77px;
 }
 
 /////////////////////////////////////////////////
 
 @media (min-width: $tablet-width) {
   .page-title {
-    padding: 105px 0 80px;
+    position: relative;
+    padding: 50px 0 95px;
     font-size: 43px;
     line-height: 50px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -2px;
+      width: 200vw;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: 770px 24px;
+      background-position-x: center;
+    }
   }
 }
+
+
+/////////////////////////////////////////////////
+
+@media (min-width: $desktop-width) {
+  .page-title {
+    font-size: 53px;
+    line-height: 57px;
+    padding: 50px 0 123px;
+
+    &::after {
+      height: 34px;
+      background-size: 1150px 34px;
+      background-position-x: 0;
+      bottom: -1;
+    }
+  }
+}
+
 ///////////////////////////////////////////////// The end

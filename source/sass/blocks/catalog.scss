@@ -1,58 +1,119 @@
 .catalog {
   padding: 0;
+}
+
+.catalog__link {
+  display: flex;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+  padding: 0 30px;
   width: 100%;
+  min-height: 103px;
+  outline: none;
 
-  &__link {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  @include font($bold, 19px, 24px, $white);
+  text-decoration: none;
 
-    box-sizing: border-box;
-    padding: 0 30px;
-    width: 100%;
-    min-height: 103px;
-
-    @include font($bold, 19px, 24px, $white);
-    text-decoration: none;
-
-    &--interior {
-      background-color: $blue;
-    }
-
-    &--toys {
-      background-color: $dark-blue;
-    }
-  }
-
-  &__icon {
-    padding-left: 30px;
+  &::after {
+    content: "";
+    display: block;
+    align-self: center;
+    padding: 0;
     opacity: 0.5;
     width: 60px;
     height: 60px;
     background-repeat: no-repeat;
     background-position: center;
+  }
 
-    &--interior {
+  &--interior {
+    background-color: $blue;
+
+    &::after {
       background-image: url("../img/icon-interior.svg");
     }
 
-    &--toys {
-      background-image: url("../img/icon-toy.svg");
+    &:hover,
+    &focus {
+      background-color: $blue-hover;
+
+      &::after {
+        opacity: 0.7;
+      }
+    }
+
+    &:active {
+      background-color: $blue-hover;
+      color: rgba($white, 0.3);
+
+      &::after {
+        opacity: 0.3;
+      }
     }
   }
+
+  &--toys {
+    background-color: $dark-blue;
+
+    &::after {
+      background-image: url("../img/icon-toy.svg");
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $dark-blue-hover;
+
+      &::after {
+        opacity: 0.7;
+      }
+    }
+
+    &:active {
+      background-color: $dark-blue-hover;
+      color: rgba($white, 0.3);
+
+      &::after {
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+.catalog__text {
+  padding: 24px 30px 24px 0;
+  margin: 0;
 }
 
 /////////////////////////////////////////////////
 
 @media (min-width: $tablet-width) {
   .catalog {
-    padding: 0 45px;
+    padding: 0 50px;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
+  }
 
-    &__link {
-      min-height: 119px;
+  .catalog__link {
+    min-height: 119px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 5px;
+
+    &:hover,
+    &:focus {
+      min-height: 124px;
+      margin-top: 0;
     }
+
+    &--toys::after {
+      margin-right: 6px;
+    }
+  }
+
+  .catalog__text {
+    padding: 28px 35px 25px 5px;
   }
 }
 

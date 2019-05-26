@@ -1,13 +1,41 @@
 //Базовый стиль кнопки
 
 .button {
+  display: block;
   height: 52px;
   box-sizing: border-box;
   border: 2px solid $gray;
   background-color: $white;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  outline: none;
 
-  @include font($bold, 17px, 20px, $gray);
+  @include font($bold, 18px, 20px, $gray);
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: $gray;
+    color: $white;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $gray;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--blue {
+    background-color: $blue;
+    border-color: $blue;
+    color: white;
+
+    &:hover,
+    &:focus {
+      background-color: $blue-hover;
+    }
+  }
 }
 
 //End
