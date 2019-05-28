@@ -2,11 +2,12 @@
 
 .about {
   box-sizing: border-box;
+  padding-top: 27px;
 }
 
 .about__title {
   @include font($bold, 25px, 30px, $black);
-  margin: 25px 0;
+  margin: 0 0 25px;
 }
 
 .about__container {
@@ -72,6 +73,10 @@
 /////////////////////////////////////////////////
 
 @media (min-width: $tablet-width) {
+  .about {
+    padding-top: 42px;
+  }
+
   .about__container {
     display: flex;
     justify-content: center;
@@ -116,7 +121,7 @@
 
 @media (min-width: $desktop-width) {
   .about {
-    padding: 0 175px;
+    padding: 53px 175px 0;
   }
 
   .about__title {
