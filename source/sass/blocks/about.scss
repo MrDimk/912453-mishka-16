@@ -10,7 +10,7 @@
 }
 
 .about__container {
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 .about__items {
@@ -76,6 +76,7 @@
     display: flex;
     justify-content: center;
     padding: 40px 0 0;
+    margin: 0;
   }
 
   .about__title {
