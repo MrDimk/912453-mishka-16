@@ -1,6 +1,9 @@
+"use strict";
+
+(function () {
 var burger = document.querySelector('.main-nav__burger-btn');
-const opened = 'main-nav__burger-btn--opened';
-const closed = 'main-nav__burger-btn--closed';
+var opened = 'main-nav__burger-btn--opened';
+var closed = 'main-nav__burger-btn--closed';
 
 burger.classList.add('main-nav__burger-btn--closed');
 
@@ -18,8 +21,8 @@ burger.addEventListener('click', function(e) {
 
 var modal = document.querySelector('.purchase-popup');
 var openModalButtons = document.querySelectorAll('.js-modal');
-const mOpened = 'modal--opened';
-const mClosed = 'modal--closed';
+var mOpened = 'modal--opened';
+var mClosed = 'modal--closed';
 
 var closeModal = function(e) {
   if(e.target.className.indexOf('purchase-popup') === -1) {
@@ -47,11 +50,11 @@ var keyboardHandler = function(evt) {
   }
 }
 
-openModalButtons.forEach(function(btn) {
-  btn.addEventListener('click', openModal);
-});
+for(var i = 0; i < openModalButtons.length; i++) {
+  openModalButtons[i].addEventListener('click', openModal);
+}
+
 window.addEventListener('keydown', keyboardHandler);
-
-
+})();
 
 //End

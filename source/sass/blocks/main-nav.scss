@@ -53,11 +53,11 @@
   margin: 22px 0 15px;
   outline: none;
 
-  &:hover {
+  &[href]:hover {
     opacity: 0.6;
   }
 
-  &:active {
+  &[href]:active {
     opacity: 0.3;
   }
 }
@@ -123,7 +123,7 @@
     }
   }
 
-  &:hover,
+  &[href]:hover,
   &:focus {
     color: rgba($black, 0.6);
 
@@ -133,7 +133,7 @@
     }
   }
 
-  &:active {
+  &[href]:active {
     opacity: 0.3;
 
     & .svg-icon {
