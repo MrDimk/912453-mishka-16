@@ -1,3 +1,6 @@
+"use strict";
+
+(function () {
 var burger = document.querySelector('.main-nav__burger-btn');
 var opened = 'main-nav__burger-btn--opened';
 var closed = 'main-nav__burger-btn--closed';
@@ -52,5 +55,6 @@ for(var i = 0; i < openModalButtons.length; i++) {
 }
 
 window.addEventListener('keydown', keyboardHandler);
+})();
 
 //End
