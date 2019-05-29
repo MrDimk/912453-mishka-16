@@ -34,6 +34,7 @@ var mClosed = 'modal--closed';
 
 var closeModal = function(e) {
   if(e.target.className.indexOf('purchase-popup') === -1) {
+    e.preventDefault();
     modal.classList.remove(mOpened);
     modal.classList.add(mClosed);
     document.removeEventListener('click', closeModal);
