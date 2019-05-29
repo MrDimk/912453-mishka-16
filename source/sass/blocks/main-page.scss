@@ -72,6 +72,7 @@
 
   .main-page__baner {
     min-height: 746px;
+    margin-bottom: 24px;
   }
 
   .main-page__top-product {
@@ -118,13 +119,17 @@
     padding-bottom: 20px;
   }
 
+  .main-page__baner {
+    margin-bottom: 50px;
+  }
+
   .main-page__top-product {
-    margin-top: 50px;
-    margin-bottom: 88px;
+    margin-top: 0;
+    margin-bottom: 110px;
 
     &::after {
       margin: 0 auto;
-      bottom: -88px;
+      bottom: -105px;
       height: 23px;
       width: 1050px;
       background-size: 1050px 23px;

@@ -151,38 +151,57 @@
 @media (min-width: $desktop-width) {
   .top-product {
     min-height: 636px;
-    padding-bottom: 0;
+    padding: 30 0 0;
   }
 
   .top-product__header {
-    position: absolute;
-    padding: 50px 0 0 50px;
+    margin-top: 50px;
+    padding: 5px 0 0 50px;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .top-product__title {
     @include font($bold, 53px, 57px, $black);
+    box-sizing: border-box;
+    margin: 0 auto 0 0;
+    height: 100%;
+    padding: 0;
   }
 
   .top-product__mark {
     order: -1;
-    margin-right: 50px;
-    padding: 8px 0 0;
+    margin: 15px 50px 0 0;
+    padding: 0;
   }
 
   .top-product__content {
-    padding: 155px 60px 135px 175px;
-    justify-content: flex-start;
+    height: auto;
+    align-items: center;
+    position: relative;
+    display: block;
+    left: 0;
+    width: 50%;
+    padding: 0 60px 135px 175px;
   }
 
   .top-product__description {
-    margin-bottom: 50px;
-    padding-top: 5px;
+    margin-bottom: 45px;
+    padding-top: 8px;
   }
 
   .top-product__purchase {
     padding: 0 60px 0 175px;
-    bottom: 8px;
+    bottom: -10px;
     left: 1px;
+  }
+
+  .top-product__image {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 50%;
+    z-index: -1;
   }
 }
 
