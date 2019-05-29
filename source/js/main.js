@@ -19,9 +19,12 @@ burger.addEventListener('click', function(e) {
 
 ////////////////////non-static map
 
-document.querySelector('.contacts__map').classList.remove('contacts__map--static');
+var map = console.log(document.querySelector('.contacts__map'));
+if (map) {
+  map.classList.remove('contacts__map--static');
+}
 
-// /////////////////modal
+///////////////////modal
 
 var modal = document.querySelector('.purchase-popup');
 var openModalButtons = document.querySelectorAll('.js-modal');
