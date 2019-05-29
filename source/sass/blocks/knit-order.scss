@@ -184,7 +184,8 @@
     & + .knit-order__field-icon {
       position: absolute;
       opacity: 0.2;
-      right: 6px;
+      top: 7px;
+      right: 2px;
     }
 
     &:hover,
@@ -202,7 +203,8 @@
     & + .knit-order__field-icon {
       position: absolute;
       opacity: 0.2;
-      right: 6px;
+      top: 6px;
+      right: 4px;
     }
 
     &:hover,
@@ -425,17 +427,23 @@
     background-color: transparent;
     font-size: 19px;
     padding-bottom: 10px;
+    padding-left: 20px;
 
     &--phone {
       height: 45px;
+
+      & + .knit-order__field-icon {
+        top: 10px;
+        right: 17px;
+      }
     }
 
     &--email {
       height: 40px;
-    }
 
-    &::placeholder {
-      padding-left: 20px;
+      & + .knit-order__field-icon {
+        right: 20px;
+      }
     }
   }
 
@@ -576,6 +584,20 @@
     font-size: 19px;
     padding-left: 16px;
     height: 48px;
+
+    &--phone {
+      & + .knit-order__field-icon {
+        top: 15px;
+        right: 2px;
+      }
+    }
+
+    &--email {
+      & + .knit-order__field-icon {
+        top: 4px;
+        right: 4px;
+      }
+    }
 
     &::placeholder {
       padding-left: 0;
