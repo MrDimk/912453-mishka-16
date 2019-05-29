@@ -19,7 +19,8 @@ burger.addEventListener('click', function(e) {
 
 ////////////////////non-static map
 
-var map = console.log(document.querySelector('.contacts__map'));
+var map = document.querySelector('.contacts__map');
+
 if (map) {
   map.classList.remove('contacts__map--static');
 }
