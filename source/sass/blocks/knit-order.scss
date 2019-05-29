@@ -551,6 +551,10 @@
         padding-bottom: 0;
         margin-bottom: 25px;
 
+        &:nth-child(3n - 1) {
+          margin-right: auto;
+        }
+
         &:nth-child(2n) {
           padding-left: 0;
         }

@@ -42,15 +42,28 @@
   margin: 0 30px 5px 0;
 }
 
+.site-footer__copyright-logo {
+  fill: $blue;
+}
+
 .site-footer__copyright-link {
   text-decoration: none;
   display: flex;
   align-items: center;
 
+  &:hover .site-footer__copyright-logo {
+    fill: $dark-blue-hover;
+  }
+
   &:active {
     opacity: 0.3;
+
+    &:hover .site-footer__copyright-logo {
+      fill: $dark-blue-hover;
+    }
   }
 }
+
 
 /////////////////////////////////////////////////
 
@@ -77,12 +90,12 @@
       height: 34px;
     }
 
-    &:hover .site-footer__logo-icon,
-    &:focus .site-footer__logo-icon {
+    &[href]:hover .site-footer__logo-icon,
+    &[href]:focus .site-footer__logo-icon {
       fill: $dark-blue-hover;
     }
 
-    &:active .site-footer__logo-icon {
+    &[href]:active .site-footer__logo-icon {
       fill: $dark-blue-hover;
       opacity: 0.3;
     }

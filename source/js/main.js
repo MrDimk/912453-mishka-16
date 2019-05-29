@@ -17,6 +17,10 @@ burger.addEventListener('click', function(e) {
   }
 });
 
+////////////////////non-static map
+
+document.querySelector('.contacts__map').classList.remove('contacts__map--static');
+
 // /////////////////modal
 
 var modal = document.querySelector('.purchase-popup');

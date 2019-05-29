@@ -33,7 +33,7 @@
         <ul class="main-nav__list main-nav__list--user">
           <li class="main-nav__item main-nav__item--search">
             <a href="#" class="main-nav__link main-nav__link--search">
-              <svg class="main-nav__icon svg-icon" width="17.6px" height="17.6px">
+              <svg class="main-nav__icon svg-icon" width="17.6" height="17.6">
                 <use xlink:href="#inline-icon-search" />
               </svg>
               Поиск по сайту
@@ -201,7 +201,7 @@
               </a>
               <div class="product__content">
                 <a href="product.html" class="product__link-title">
-                  <h3 class="product__title">Большая корзинка для&nbspигрушек</h3>
+                  <h3 class="product__title">Большая корзинка для&nbsp;игрушек</h3>
                 </a>
                 <p class="product__properties">Диаметр 30 см, высота 30 см</p>
                 <div class="product__bottom">
@@ -257,11 +257,11 @@
               По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
               появляются наши товары.
             </p>
-            <button class="production__purchase-btn button">Сделать заказ</button>
+            <a href="#" class="production__purchase-btn button">Сделать заказ</a>
           </div>
         </section>
       </div>
-      <section class="main-page__purchase-popup purchase-popup modal modal--closed">
+      <section class="site-page__purchase-popup purchase-popup modal modal--closed">
         <h2 class="purchase-popup__title">
           Добавить в корзину
         </h2>
@@ -310,8 +310,8 @@
     </main>
     <footer class="site-footer">
       <div class="site-footer__container">
-        <a href="index.html" class="site-footer__logo-link">
-          <svg class="site-footer__logo-icon" width="101.615px" height="34.056px">
+        <a href="index.html" class="site-footer__logo-link" aria-label="На главную страницу">
+          <svg class="site-footer__logo-icon" width="101.615" height="34.056">
             <use xlink:href="#inline-logo-footer" />
           </svg>
           Мишка - магазин товаров ручной работы
@@ -344,13 +344,9 @@
             <p class="site-footer__copyright">
               Разработано
             </p>
-            <img
-              class="site-footer__copyright-logo"
-              width="27"
-              height="34"
-              src="img/htmlacademy.svg"
-              alt="HTML Academy - HTML и CSS, уровень 2"
-            />
+            <svg class="site-footer__copyright-logo svg-icon" width="27" height="34">
+              <use xlink:href="#inline-htmlacademy" />
+            </svg>
           </a>
         </div>
       </div>
